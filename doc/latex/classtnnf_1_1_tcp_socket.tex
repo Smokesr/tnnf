@@ -1,0 +1,350 @@
+\hypertarget{classtnnf_1_1_tcp_socket}{}\section{tnnf\+:\+:Tcp\+Socket Class Reference}
+\label{classtnnf_1_1_tcp_socket}\index{tnnf\+::\+Tcp\+Socket@{tnnf\+::\+Tcp\+Socket}}
+
+
+This class makes possible to build T\+C\+P connections, sending and receiving packets.  
+
+
+
+
+{\ttfamily \#include $<$Tcp\+Socket.\+hpp$>$}
+
+Inheritance diagram for tnnf\+:\+:Tcp\+Socket\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classtnnf_1_1_tcp_socket}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtnnf_1_1_tcp_socket_a99a359023e849d77baf1b0e7566116d7}{Tcp\+Socket} (const \hyperlink{classtnnf_1_1_tcp_socket}{Tcp\+Socket} \&other)=default
+\item 
+\hyperlink{classtnnf_1_1_tcp_socket}{Tcp\+Socket} \& \hyperlink{classtnnf_1_1_tcp_socket_a27cd1fcee0d7f961555383a89b7725ef}{operator=} (const \hyperlink{classtnnf_1_1_tcp_socket}{Tcp\+Socket} \&other)=default
+\item 
+\hyperlink{classtnnf_1_1_tcp_socket_af13142e742635325c78a9201bebb7c9d}{Tcp\+Socket} (\hyperlink{classtnnf_1_1_tcp_socket}{Tcp\+Socket} \&\&other) noexcept=default
+\item 
+\hyperlink{classtnnf_1_1_tcp_socket}{Tcp\+Socket} \& \hyperlink{classtnnf_1_1_tcp_socket_afbe6c348aaffb7b3efca529e6b2250bd}{operator=} (\hyperlink{classtnnf_1_1_tcp_socket}{Tcp\+Socket} \&\&other)=default
+\item 
+void \hyperlink{classtnnf_1_1_tcp_socket_a298fedb5dd30eee151175e95164d7373}{swap} (\hyperlink{classtnnf_1_1_tcp_socket}{Tcp\+Socket} \&other) noexcept
+\begin{DoxyCompactList}\small\item\em Swap the references between two Tcp\+Sockets. \end{DoxyCompactList}\item 
+virtual \hyperlink{classtnnf_1_1_tcp_socket_afc468cda1569604b3514aa6c80ae19d0}{$\sim$\+Tcp\+Socket} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \hyperlink{classtnnf_1_1_tcp_socket_a7aa8f759eb3b96498b0a99bffd3e42e1}{send} (const \hyperlink{classtnnf_1_1_packet}{Packet} \&packet, \hyperlink{classtnnf_1_1_address}{Address} \&address, const int \&flags) noexceptfinal
+\begin{DoxyCompactList}\small\item\em Sends the specified packet to the stored address with the specified flags. \end{DoxyCompactList}\item 
+void \hyperlink{classtnnf_1_1_tcp_socket_accbb5359d1cc9580bab8f209c85581ed}{send} (const \hyperlink{classtnnf_1_1_packet}{Packet} \&packet, \hyperlink{classtnnf_1_1_address}{Address} \&address) noexceptfinal
+\begin{DoxyCompactList}\small\item\em Sends the specified packet to the stored address with the stored flags. \end{DoxyCompactList}\item 
+void \hyperlink{classtnnf_1_1_tcp_socket_adb529ca692b31b0154dc5d007d4129f9}{send} (const \hyperlink{classtnnf_1_1_packet}{Packet} \&packet, const int \&flags) noexceptfinal
+\begin{DoxyCompactList}\small\item\em Sends the specified packet to the stored address with the specified flags. \end{DoxyCompactList}\item 
+void \hyperlink{classtnnf_1_1_tcp_socket_a69f6fe0ca7e90ddfdcbd894056baed88}{send} (const \hyperlink{classtnnf_1_1_packet}{Packet} \&packet) noexceptfinal
+\begin{DoxyCompactList}\small\item\em Sends the specified packet to the stored address with the stored flags. \end{DoxyCompactList}\item 
+void \hyperlink{classtnnf_1_1_tcp_socket_ae713b6c9c9552af781989ec5382158d5}{receive} (\hyperlink{classtnnf_1_1_packet_buffer}{Packet\+Buffer} \&buffer, \hyperlink{classtnnf_1_1_address}{Address} \&address, const int \&flags) noexceptfinal
+\begin{DoxyCompactList}\small\item\em Blocking until receives packet on the stored address. \end{DoxyCompactList}\item 
+void \hyperlink{classtnnf_1_1_tcp_socket_aedbff0b4f5512742642a648712d93e7f}{receive} (\hyperlink{classtnnf_1_1_packet_buffer}{Packet\+Buffer} \&buffer, \hyperlink{classtnnf_1_1_address}{Address} \&address) noexceptfinal
+\begin{DoxyCompactList}\small\item\em Blocking until receives packet on the stored address, with the stored flags. \end{DoxyCompactList}\item 
+void \hyperlink{classtnnf_1_1_tcp_socket_a05fc003226288073314f52e3ee259119}{receive} (\hyperlink{classtnnf_1_1_packet_buffer}{Packet\+Buffer} \&buffer, const int \&flags) noexceptfinal
+\begin{DoxyCompactList}\small\item\em Blocking until receives packet on the stored address. \end{DoxyCompactList}\item 
+void \hyperlink{classtnnf_1_1_tcp_socket_a4a98e65e8a569cf8a21fa2f7d0e6a7db}{receive} (\hyperlink{classtnnf_1_1_packet_buffer}{Packet\+Buffer} \&buffer) noexceptfinal
+\begin{DoxyCompactList}\small\item\em Blocking until receives packet on the stored address, with the stored flags. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtnnf_1_1_tcp_socket_a10a44011020f350bac067dc589243fcd}{Tcp\+Socket} (const \hyperlink{classtnnf_1_1_address}{Address} \&address)
+\begin{DoxyCompactList}\small\item\em Constructor for initializing a new T\+C\+P socket. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classtnnf_1_1_tcp_socket}{Tcp\+Socket} \hyperlink{classtnnf_1_1_tcp_socket_a6ab516c24607c4e644204a46d7ede251}{Get\+Instance} (const std\+::shared\+\_\+ptr$<$ int $>$ \&sock, const \hyperlink{classtnnf_1_1_address}{Address} \&address)
+\begin{DoxyCompactList}\small\item\em Method to set a new socket with already initialized data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This class makes possible to build T\+C\+P connections, sending and receiving packets. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classtnnf_1_1_tcp_socket_a10a44011020f350bac067dc589243fcd}{}\index{tnnf\+::\+Tcp\+Socket@{tnnf\+::\+Tcp\+Socket}!Tcp\+Socket@{Tcp\+Socket}}
+\index{Tcp\+Socket@{Tcp\+Socket}!tnnf\+::\+Tcp\+Socket@{tnnf\+::\+Tcp\+Socket}}
+\subsubsection[{Tcp\+Socket}]{\setlength{\rightskip}{0pt plus 5cm}tnnf\+::\+Tcp\+Socket\+::\+Tcp\+Socket (
+\begin{DoxyParamCaption}
+\item[{const {\bf Address} \&}]{address}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\label{classtnnf_1_1_tcp_socket_a10a44011020f350bac067dc589243fcd}
+
+
+Constructor for initializing a new T\+C\+P socket. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em address} & Ip address, which will be stored with the socket. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classtnnf_1_1_tcp_socket_a99a359023e849d77baf1b0e7566116d7}{}\index{tnnf\+::\+Tcp\+Socket@{tnnf\+::\+Tcp\+Socket}!Tcp\+Socket@{Tcp\+Socket}}
+\index{Tcp\+Socket@{Tcp\+Socket}!tnnf\+::\+Tcp\+Socket@{tnnf\+::\+Tcp\+Socket}}
+\subsubsection[{Tcp\+Socket}]{\setlength{\rightskip}{0pt plus 5cm}tnnf\+::\+Tcp\+Socket\+::\+Tcp\+Socket (
+\begin{DoxyParamCaption}
+\item[{const {\bf Tcp\+Socket} \&}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}\label{classtnnf_1_1_tcp_socket_a99a359023e849d77baf1b0e7566116d7}
+\hypertarget{classtnnf_1_1_tcp_socket_af13142e742635325c78a9201bebb7c9d}{}\index{tnnf\+::\+Tcp\+Socket@{tnnf\+::\+Tcp\+Socket}!Tcp\+Socket@{Tcp\+Socket}}
+\index{Tcp\+Socket@{Tcp\+Socket}!tnnf\+::\+Tcp\+Socket@{tnnf\+::\+Tcp\+Socket}}
+\subsubsection[{Tcp\+Socket}]{\setlength{\rightskip}{0pt plus 5cm}tnnf\+::\+Tcp\+Socket\+::\+Tcp\+Socket (
+\begin{DoxyParamCaption}
+\item[{{\bf Tcp\+Socket} \&\&}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}\label{classtnnf_1_1_tcp_socket_af13142e742635325c78a9201bebb7c9d}
+\hypertarget{classtnnf_1_1_tcp_socket_afc468cda1569604b3514aa6c80ae19d0}{}\index{tnnf\+::\+Tcp\+Socket@{tnnf\+::\+Tcp\+Socket}!````~Tcp\+Socket@{$\sim$\+Tcp\+Socket}}
+\index{````~Tcp\+Socket@{$\sim$\+Tcp\+Socket}!tnnf\+::\+Tcp\+Socket@{tnnf\+::\+Tcp\+Socket}}
+\subsubsection[{$\sim$\+Tcp\+Socket}]{\setlength{\rightskip}{0pt plus 5cm}tnnf\+::\+Tcp\+Socket\+::$\sim$\+Tcp\+Socket (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classtnnf_1_1_tcp_socket_afc468cda1569604b3514aa6c80ae19d0}
+
+
+Destructor. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classtnnf_1_1_tcp_socket_a6ab516c24607c4e644204a46d7ede251}{}\index{tnnf\+::\+Tcp\+Socket@{tnnf\+::\+Tcp\+Socket}!Get\+Instance@{Get\+Instance}}
+\index{Get\+Instance@{Get\+Instance}!tnnf\+::\+Tcp\+Socket@{tnnf\+::\+Tcp\+Socket}}
+\subsubsection[{Get\+Instance}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Tcp\+Socket} tnnf\+::\+Tcp\+Socket\+::\+Get\+Instance (
+\begin{DoxyParamCaption}
+\item[{const std\+::shared\+\_\+ptr$<$ int $>$ \&}]{sock, }
+\item[{const {\bf Address} \&}]{address}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [protected]}}\label{classtnnf_1_1_tcp_socket_a6ab516c24607c4e644204a46d7ede251}
+
+
+Method to set a new socket with already initialized data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sock} & An initialized socket carried by std\+::shared\+\_\+ptr. \\
+\hline
+{\em address} & Ip address, where the packets will be sent. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+with an instance of a new \hyperlink{classtnnf_1_1_tcp_socket}{Tcp\+Socket} 
+\end{DoxyReturn}
+\hypertarget{classtnnf_1_1_tcp_socket_a27cd1fcee0d7f961555383a89b7725ef}{}\index{tnnf\+::\+Tcp\+Socket@{tnnf\+::\+Tcp\+Socket}!operator=@{operator=}}
+\index{operator=@{operator=}!tnnf\+::\+Tcp\+Socket@{tnnf\+::\+Tcp\+Socket}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Tcp\+Socket}\& tnnf\+::\+Tcp\+Socket\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Tcp\+Socket} \&}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}\label{classtnnf_1_1_tcp_socket_a27cd1fcee0d7f961555383a89b7725ef}
+\hypertarget{classtnnf_1_1_tcp_socket_afbe6c348aaffb7b3efca529e6b2250bd}{}\index{tnnf\+::\+Tcp\+Socket@{tnnf\+::\+Tcp\+Socket}!operator=@{operator=}}
+\index{operator=@{operator=}!tnnf\+::\+Tcp\+Socket@{tnnf\+::\+Tcp\+Socket}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Tcp\+Socket}\& tnnf\+::\+Tcp\+Socket\+::operator= (
+\begin{DoxyParamCaption}
+\item[{{\bf Tcp\+Socket} \&\&}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}\label{classtnnf_1_1_tcp_socket_afbe6c348aaffb7b3efca529e6b2250bd}
+\hypertarget{classtnnf_1_1_tcp_socket_ae713b6c9c9552af781989ec5382158d5}{}\index{tnnf\+::\+Tcp\+Socket@{tnnf\+::\+Tcp\+Socket}!receive@{receive}}
+\index{receive@{receive}!tnnf\+::\+Tcp\+Socket@{tnnf\+::\+Tcp\+Socket}}
+\subsubsection[{receive}]{\setlength{\rightskip}{0pt plus 5cm}void tnnf\+::\+Tcp\+Socket\+::receive (
+\begin{DoxyParamCaption}
+\item[{{\bf Packet\+Buffer} \&}]{buffer, }
+\item[{{\bf Address} \&}]{address, }
+\item[{const int \&}]{flags}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [final]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}\label{classtnnf_1_1_tcp_socket_ae713b6c9c9552af781989ec5382158d5}
+
+
+Blocking until receives packet on the stored address. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & Where the packets will be stored. \\
+\hline
+{\em address} & will be ignored. \\
+\hline
+{\em flags} & Specifies receiving flags for this receive. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classtnnf_1_1_socket_a0366ede12a56573b51e02c9a80b32595}{tnnf\+::\+Socket}.
+
+\hypertarget{classtnnf_1_1_tcp_socket_aedbff0b4f5512742642a648712d93e7f}{}\index{tnnf\+::\+Tcp\+Socket@{tnnf\+::\+Tcp\+Socket}!receive@{receive}}
+\index{receive@{receive}!tnnf\+::\+Tcp\+Socket@{tnnf\+::\+Tcp\+Socket}}
+\subsubsection[{receive}]{\setlength{\rightskip}{0pt plus 5cm}void tnnf\+::\+Tcp\+Socket\+::receive (
+\begin{DoxyParamCaption}
+\item[{{\bf Packet\+Buffer} \&}]{buffer, }
+\item[{{\bf Address} \&}]{address}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [final]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}\label{classtnnf_1_1_tcp_socket_aedbff0b4f5512742642a648712d93e7f}
+
+
+Blocking until receives packet on the stored address, with the stored flags. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & Where the packets will be stored. \\
+\hline
+{\em address} & will be ignored. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classtnnf_1_1_socket_ab732e38ca26568402dba2cfa71601f6a}{tnnf\+::\+Socket}.
+
+\hypertarget{classtnnf_1_1_tcp_socket_a05fc003226288073314f52e3ee259119}{}\index{tnnf\+::\+Tcp\+Socket@{tnnf\+::\+Tcp\+Socket}!receive@{receive}}
+\index{receive@{receive}!tnnf\+::\+Tcp\+Socket@{tnnf\+::\+Tcp\+Socket}}
+\subsubsection[{receive}]{\setlength{\rightskip}{0pt plus 5cm}void tnnf\+::\+Tcp\+Socket\+::receive (
+\begin{DoxyParamCaption}
+\item[{{\bf Packet\+Buffer} \&}]{buffer, }
+\item[{const int \&}]{flags}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [final]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}\label{classtnnf_1_1_tcp_socket_a05fc003226288073314f52e3ee259119}
+
+
+Blocking until receives packet on the stored address. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & Where the packets will be stored. \\
+\hline
+{\em flags} & Specify receiving flags for this receive. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classtnnf_1_1_socket_a5f6671174f679fce6b3e2eea080befe7}{tnnf\+::\+Socket}.
+
+\hypertarget{classtnnf_1_1_tcp_socket_a4a98e65e8a569cf8a21fa2f7d0e6a7db}{}\index{tnnf\+::\+Tcp\+Socket@{tnnf\+::\+Tcp\+Socket}!receive@{receive}}
+\index{receive@{receive}!tnnf\+::\+Tcp\+Socket@{tnnf\+::\+Tcp\+Socket}}
+\subsubsection[{receive}]{\setlength{\rightskip}{0pt plus 5cm}void tnnf\+::\+Tcp\+Socket\+::receive (
+\begin{DoxyParamCaption}
+\item[{{\bf Packet\+Buffer} \&}]{buffer}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [final]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}\label{classtnnf_1_1_tcp_socket_a4a98e65e8a569cf8a21fa2f7d0e6a7db}
+
+
+Blocking until receives packet on the stored address, with the stored flags. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & Where the packets will be stored. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classtnnf_1_1_socket_aad6435e91d6fce28068f2aa06980b532}{tnnf\+::\+Socket}.
+
+\hypertarget{classtnnf_1_1_tcp_socket_a7aa8f759eb3b96498b0a99bffd3e42e1}{}\index{tnnf\+::\+Tcp\+Socket@{tnnf\+::\+Tcp\+Socket}!send@{send}}
+\index{send@{send}!tnnf\+::\+Tcp\+Socket@{tnnf\+::\+Tcp\+Socket}}
+\subsubsection[{send}]{\setlength{\rightskip}{0pt plus 5cm}void tnnf\+::\+Tcp\+Socket\+::send (
+\begin{DoxyParamCaption}
+\item[{const {\bf Packet} \&}]{packet, }
+\item[{{\bf Address} \&}]{address, }
+\item[{const int \&}]{flags}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [final]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}\label{classtnnf_1_1_tcp_socket_a7aa8f759eb3b96498b0a99bffd3e42e1}
+
+
+Sends the specified packet to the stored address with the specified flags. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em packet} & \\
+\hline
+{\em address} & It will be ignored. \\
+\hline
+{\em flags} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classtnnf_1_1_socket_a26c6806603bc33f27f01ba55ce3630a1}{tnnf\+::\+Socket}.
+
+\hypertarget{classtnnf_1_1_tcp_socket_accbb5359d1cc9580bab8f209c85581ed}{}\index{tnnf\+::\+Tcp\+Socket@{tnnf\+::\+Tcp\+Socket}!send@{send}}
+\index{send@{send}!tnnf\+::\+Tcp\+Socket@{tnnf\+::\+Tcp\+Socket}}
+\subsubsection[{send}]{\setlength{\rightskip}{0pt plus 5cm}void tnnf\+::\+Tcp\+Socket\+::send (
+\begin{DoxyParamCaption}
+\item[{const {\bf Packet} \&}]{packet, }
+\item[{{\bf Address} \&}]{address}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [final]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}\label{classtnnf_1_1_tcp_socket_accbb5359d1cc9580bab8f209c85581ed}
+
+
+Sends the specified packet to the stored address with the stored flags. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em packet} & \\
+\hline
+{\em address} & It will be ignored. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classtnnf_1_1_socket_a9863eeceaff1b078558b1b8c3d541e40}{tnnf\+::\+Socket}.
+
+\hypertarget{classtnnf_1_1_tcp_socket_adb529ca692b31b0154dc5d007d4129f9}{}\index{tnnf\+::\+Tcp\+Socket@{tnnf\+::\+Tcp\+Socket}!send@{send}}
+\index{send@{send}!tnnf\+::\+Tcp\+Socket@{tnnf\+::\+Tcp\+Socket}}
+\subsubsection[{send}]{\setlength{\rightskip}{0pt plus 5cm}void tnnf\+::\+Tcp\+Socket\+::send (
+\begin{DoxyParamCaption}
+\item[{const {\bf Packet} \&}]{packet, }
+\item[{const int \&}]{flags}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [final]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}\label{classtnnf_1_1_tcp_socket_adb529ca692b31b0154dc5d007d4129f9}
+
+
+Sends the specified packet to the stored address with the specified flags. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em packet} & \\
+\hline
+{\em flags} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classtnnf_1_1_socket_ac8d4131ac7854d01133b62db70316d0d}{tnnf\+::\+Socket}.
+
+\hypertarget{classtnnf_1_1_tcp_socket_a69f6fe0ca7e90ddfdcbd894056baed88}{}\index{tnnf\+::\+Tcp\+Socket@{tnnf\+::\+Tcp\+Socket}!send@{send}}
+\index{send@{send}!tnnf\+::\+Tcp\+Socket@{tnnf\+::\+Tcp\+Socket}}
+\subsubsection[{send}]{\setlength{\rightskip}{0pt plus 5cm}void tnnf\+::\+Tcp\+Socket\+::send (
+\begin{DoxyParamCaption}
+\item[{const {\bf Packet} \&}]{packet}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [final]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}\label{classtnnf_1_1_tcp_socket_a69f6fe0ca7e90ddfdcbd894056baed88}
+
+
+Sends the specified packet to the stored address with the stored flags. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em packet} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classtnnf_1_1_socket_a21df1f81d8104d3387d608059e16eb67}{tnnf\+::\+Socket}.
+
+\hypertarget{classtnnf_1_1_tcp_socket_a298fedb5dd30eee151175e95164d7373}{}\index{tnnf\+::\+Tcp\+Socket@{tnnf\+::\+Tcp\+Socket}!swap@{swap}}
+\index{swap@{swap}!tnnf\+::\+Tcp\+Socket@{tnnf\+::\+Tcp\+Socket}}
+\subsubsection[{swap}]{\setlength{\rightskip}{0pt plus 5cm}void tnnf\+::\+Tcp\+Socket\+::swap (
+\begin{DoxyParamCaption}
+\item[{{\bf Tcp\+Socket} \&}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}\label{classtnnf_1_1_tcp_socket_a298fedb5dd30eee151175e95164d7373}
+
+
+Swap the references between two Tcp\+Sockets. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Another \hyperlink{classtnnf_1_1_tcp_socket}{Tcp\+Socket} \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/smoke/files/prog/git\+\_\+tnnf/include/tnnf/\hyperlink{_tcp_socket_8hpp}{Tcp\+Socket.\+hpp}\end{DoxyCompactItemize}

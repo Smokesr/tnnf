@@ -1,0 +1,196 @@
+\hypertarget{namespacetnnf}{}\section{tnnf Namespace Reference}
+\label{namespacetnnf}\index{tnnf@{tnnf}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classtnnf_1_1_address}{Address}
+\begin{DoxyCompactList}\small\item\em This class store an I\+Pv4 or I\+Pv6 address. \end{DoxyCompactList}\item 
+class \hyperlink{classtnnf_1_1_client_socket}{Client\+Socket}
+\begin{DoxyCompactList}\small\item\em This class can connect to a \hyperlink{classtnnf_1_1_listener_socket}{Listener\+Socket}, and communicate with another T\+C\+P socket. \end{DoxyCompactList}\item 
+class \hyperlink{classtnnf_1_1_listener_socket}{Listener\+Socket}
+\begin{DoxyCompactList}\small\item\em This class wait for tcp connections, and make a socket from them. \end{DoxyCompactList}\item 
+class \hyperlink{classtnnf_1_1_packet}{Packet}
+\begin{DoxyCompactList}\small\item\em This class for encapsulate your data to fit to the T\+C\+P sending methods, and identify it. \end{DoxyCompactList}\item 
+class \hyperlink{classtnnf_1_1_packet_buffer}{Packet\+Buffer}
+\begin{DoxyCompactList}\small\item\em This class builds packets from bytes and. \end{DoxyCompactList}\item 
+class \hyperlink{classtnnf_1_1_selector}{Selector}
+\begin{DoxyCompactList}\small\item\em A class that stores sockets and check their state. \end{DoxyCompactList}\item 
+class \hyperlink{classtnnf_1_1_socket}{Socket}
+\begin{DoxyCompactList}\small\item\em This is an abstract class. All other type of sockets derive from this. \end{DoxyCompactList}\item 
+class \hyperlink{classtnnf_1_1_tcp_socket}{Tcp\+Socket}
+\begin{DoxyCompactList}\small\item\em This class makes possible to build T\+C\+P connections, sending and receiving packets. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef void($\ast$ \hyperlink{namespacetnnf_ab346f9859b3d467cfa2b596cc075e954}{Socket\+Error\+Function}) (\hyperlink{classtnnf_1_1_socket}{Socket} \&, const uint32\+\_\+t \&, int \&)
+\item 
+typedef void($\ast$ \hyperlink{namespacetnnf_a8582fd7399bd6b4f1bc80f600e0dc889}{Common\+Error\+Function}) (const uint32\+\_\+t \&, const char $\ast$)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{namespacetnnf_a21142ebedd6a5be7bfffd23787de2938}{Default\+Socket\+Error\+Callback} (\hyperlink{classtnnf_1_1_socket}{Socket} \&faulty\+Socket, const uint32\+\_\+t \&error\+Event, int \&c\+Errno)
+\item 
+void \hyperlink{namespacetnnf_a8d20067dede7c6002372c1f919c853e7}{Set\+Socket\+Error\+Callback} (\hyperlink{namespacetnnf_ab346f9859b3d467cfa2b596cc075e954}{Socket\+Error\+Function} function)
+\item 
+void \hyperlink{namespacetnnf_a38b2a35754cac26ac7f6e0ba5d56d880}{Default\+Common\+Error\+Callback} (const uint32\+\_\+t \&error\+Code, const char $\ast$error\+Message)
+\item 
+void \hyperlink{namespacetnnf_a5d18138a14d8e49215ffd2c09a7b6f59}{Set\+Common\+Error\+Callback} (\hyperlink{namespacetnnf_a8582fd7399bd6b4f1bc80f600e0dc889}{Common\+Error\+Function} function)
+\item 
+std\+::string \hyperlink{namespacetnnf_adfa355657ef15a2e12973ee06c8c12d3}{Get\+Last\+Error} ()
+\item 
+void \hyperlink{namespacetnnf_a84ecbdaf4059aa6036aebc5dcbe0c9fa}{Print\+Last\+Error} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const uint32\+\_\+t \hyperlink{namespacetnnf_a51be82cdfdf6eff814be2e34de56a9a1}{E\+R\+R\+O\+R\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+C\+R\+E\+A\+T\+E} = 100
+\item 
+const uint32\+\_\+t \hyperlink{namespacetnnf_add560b64e8aecd3281b3c91a0d16d362}{E\+R\+R\+O\+R\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+B\+I\+N\+D} = 110
+\item 
+const uint32\+\_\+t \hyperlink{namespacetnnf_aba852bd058879ae114c4a193dae288ba}{E\+R\+R\+O\+R\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T} = 111
+\item 
+const uint32\+\_\+t \hyperlink{namespacetnnf_a3faa5f965d97387038d335b38db45285}{E\+R\+R\+O\+R\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+L\+I\+S\+T\+E\+N} = 112
+\item 
+const uint32\+\_\+t \hyperlink{namespacetnnf_afe273a345b20de223f7e6201d9660fb8}{E\+R\+R\+O\+R\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+A\+C\+C\+E\+P\+T} = 113
+\item 
+const uint32\+\_\+t \hyperlink{namespacetnnf_ae28f1ae6799377f7d7c40bd752c1a8ca}{E\+R\+R\+O\+R\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+S\+E\+T\+S\+O\+C\+K\+O\+P\+T} = 114
+\item 
+const uint32\+\_\+t \hyperlink{namespacetnnf_a6cec59383f83c86885d8f8681106d003}{E\+R\+R\+O\+R\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+G\+E\+T\+S\+O\+C\+K\+O\+P\+T} = 115
+\item 
+const uint32\+\_\+t \hyperlink{namespacetnnf_a55b8e5d6612e2ab58109761946028ed6}{E\+R\+R\+O\+R\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+S\+E\+N\+D} = 116
+\item 
+const uint32\+\_\+t \hyperlink{namespacetnnf_a3e5567624ad53b0da7c9bd2e8fa0f3eb}{E\+R\+R\+O\+R\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+R\+E\+C\+E\+I\+V\+E} = 117
+\item 
+const uint32\+\_\+t \hyperlink{namespacetnnf_a0d1722c8223224a7453b2d66b8982af0}{E\+R\+R\+O\+R\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+H\+A\+N\+G\+U\+P} = 118
+\item 
+\hyperlink{namespacetnnf_ab346f9859b3d467cfa2b596cc075e954}{Socket\+Error\+Function} \hyperlink{namespacetnnf_a802200ba988ad42ccc91044d5f95d24e}{g\+Socket\+Error\+Function} = \hyperlink{namespacetnnf_a21142ebedd6a5be7bfffd23787de2938}{Default\+Socket\+Error\+Callback}
+\item 
+const uint32\+\_\+t \hyperlink{namespacetnnf_a754e3b1ba0068cba6479b08b2ebec56c}{E\+R\+R\+O\+R\+\_\+\+U\+N\+K\+N\+O\+W\+N} = 0
+\item 
+const uint32\+\_\+t \hyperlink{namespacetnnf_af662f0c35b0eb75729eb6ae1ae3e48df}{E\+R\+R\+O\+R\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R\+\_\+\+F\+A\+I\+L} = 300
+\item 
+const uint32\+\_\+t \hyperlink{namespacetnnf_a1e6246ce42ad3d14b27cddb40dbe2e92}{E\+R\+R\+O\+R\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R\+\_\+\+T\+I\+M\+E\+O\+U\+T} = 301
+\item 
+const uint32\+\_\+t \hyperlink{namespacetnnf_a2a52f505fa0fc0f44aa4277b2f2a4eaa}{E\+R\+R\+O\+R\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R\+\_\+\+N\+O\+\_\+\+T\+A\+R\+G\+E\+T} = 302
+\item 
+const uint32\+\_\+t \hyperlink{namespacetnnf_aad4f66acf18647decd893947c7ddaea7}{E\+R\+R\+O\+R\+\_\+\+P\+A\+C\+K\+E\+T\+\_\+\+T\+O\+O\+\_\+\+B\+I\+G} = 200
+\item 
+const uint32\+\_\+t \hyperlink{namespacetnnf_a21a988a81b1093f0320978991010a99f}{E\+R\+R\+O\+R\+\_\+\+P\+A\+C\+K\+E\+T\+B\+U\+F\+F\+E\+R\+\_\+\+T\+O\+O\+\_\+\+S\+M\+A\+L\+L} = 250
+\item 
+\hyperlink{namespacetnnf_a8582fd7399bd6b4f1bc80f600e0dc889}{Common\+Error\+Function} \hyperlink{namespacetnnf_a09f00feabd8f2363f85eaa64d9f0a1bb}{g\+Common\+Error\+Function} = \hyperlink{namespacetnnf_a38b2a35754cac26ac7f6e0ba5d56d880}{Default\+Common\+Error\+Callback}
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{namespacetnnf_a8582fd7399bd6b4f1bc80f600e0dc889}{}\index{tnnf@{tnnf}!Common\+Error\+Function@{Common\+Error\+Function}}
+\index{Common\+Error\+Function@{Common\+Error\+Function}!tnnf@{tnnf}}
+\subsubsection[{Common\+Error\+Function}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($\ast$ tnnf\+::\+Common\+Error\+Function) (const uint32\+\_\+t \&, const char $\ast$)}\label{namespacetnnf_a8582fd7399bd6b4f1bc80f600e0dc889}
+\hypertarget{namespacetnnf_ab346f9859b3d467cfa2b596cc075e954}{}\index{tnnf@{tnnf}!Socket\+Error\+Function@{Socket\+Error\+Function}}
+\index{Socket\+Error\+Function@{Socket\+Error\+Function}!tnnf@{tnnf}}
+\subsubsection[{Socket\+Error\+Function}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($\ast$ tnnf\+::\+Socket\+Error\+Function) ({\bf Socket} \&, const uint32\+\_\+t \&, int \&)}\label{namespacetnnf_ab346f9859b3d467cfa2b596cc075e954}
+
+
+\subsection{Function Documentation}
+\hypertarget{namespacetnnf_a38b2a35754cac26ac7f6e0ba5d56d880}{}\index{tnnf@{tnnf}!Default\+Common\+Error\+Callback@{Default\+Common\+Error\+Callback}}
+\index{Default\+Common\+Error\+Callback@{Default\+Common\+Error\+Callback}!tnnf@{tnnf}}
+\subsubsection[{Default\+Common\+Error\+Callback}]{\setlength{\rightskip}{0pt plus 5cm}void tnnf\+::\+Default\+Common\+Error\+Callback (
+\begin{DoxyParamCaption}
+\item[{const uint32\+\_\+t \&}]{error\+Code, }
+\item[{const char $\ast$}]{error\+Message}
+\end{DoxyParamCaption}
+)}\label{namespacetnnf_a38b2a35754cac26ac7f6e0ba5d56d880}
+\hypertarget{namespacetnnf_a21142ebedd6a5be7bfffd23787de2938}{}\index{tnnf@{tnnf}!Default\+Socket\+Error\+Callback@{Default\+Socket\+Error\+Callback}}
+\index{Default\+Socket\+Error\+Callback@{Default\+Socket\+Error\+Callback}!tnnf@{tnnf}}
+\subsubsection[{Default\+Socket\+Error\+Callback}]{\setlength{\rightskip}{0pt plus 5cm}void tnnf\+::\+Default\+Socket\+Error\+Callback (
+\begin{DoxyParamCaption}
+\item[{{\bf Socket} \&}]{faulty\+Socket, }
+\item[{const uint32\+\_\+t \&}]{error\+Event, }
+\item[{int \&}]{c\+Errno}
+\end{DoxyParamCaption}
+)}\label{namespacetnnf_a21142ebedd6a5be7bfffd23787de2938}
+\hypertarget{namespacetnnf_adfa355657ef15a2e12973ee06c8c12d3}{}\index{tnnf@{tnnf}!Get\+Last\+Error@{Get\+Last\+Error}}
+\index{Get\+Last\+Error@{Get\+Last\+Error}!tnnf@{tnnf}}
+\subsubsection[{Get\+Last\+Error}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string tnnf\+::\+Get\+Last\+Error (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{namespacetnnf_adfa355657ef15a2e12973ee06c8c12d3}
+\hypertarget{namespacetnnf_a84ecbdaf4059aa6036aebc5dcbe0c9fa}{}\index{tnnf@{tnnf}!Print\+Last\+Error@{Print\+Last\+Error}}
+\index{Print\+Last\+Error@{Print\+Last\+Error}!tnnf@{tnnf}}
+\subsubsection[{Print\+Last\+Error}]{\setlength{\rightskip}{0pt plus 5cm}void tnnf\+::\+Print\+Last\+Error (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{namespacetnnf_a84ecbdaf4059aa6036aebc5dcbe0c9fa}
+\hypertarget{namespacetnnf_a5d18138a14d8e49215ffd2c09a7b6f59}{}\index{tnnf@{tnnf}!Set\+Common\+Error\+Callback@{Set\+Common\+Error\+Callback}}
+\index{Set\+Common\+Error\+Callback@{Set\+Common\+Error\+Callback}!tnnf@{tnnf}}
+\subsubsection[{Set\+Common\+Error\+Callback}]{\setlength{\rightskip}{0pt plus 5cm}void tnnf\+::\+Set\+Common\+Error\+Callback (
+\begin{DoxyParamCaption}
+\item[{{\bf Common\+Error\+Function}}]{function}
+\end{DoxyParamCaption}
+)}\label{namespacetnnf_a5d18138a14d8e49215ffd2c09a7b6f59}
+\hypertarget{namespacetnnf_a8d20067dede7c6002372c1f919c853e7}{}\index{tnnf@{tnnf}!Set\+Socket\+Error\+Callback@{Set\+Socket\+Error\+Callback}}
+\index{Set\+Socket\+Error\+Callback@{Set\+Socket\+Error\+Callback}!tnnf@{tnnf}}
+\subsubsection[{Set\+Socket\+Error\+Callback}]{\setlength{\rightskip}{0pt plus 5cm}void tnnf\+::\+Set\+Socket\+Error\+Callback (
+\begin{DoxyParamCaption}
+\item[{{\bf Socket\+Error\+Function}}]{function}
+\end{DoxyParamCaption}
+)}\label{namespacetnnf_a8d20067dede7c6002372c1f919c853e7}
+
+
+\subsection{Variable Documentation}
+\hypertarget{namespacetnnf_aad4f66acf18647decd893947c7ddaea7}{}\index{tnnf@{tnnf}!E\+R\+R\+O\+R\+\_\+\+P\+A\+C\+K\+E\+T\+\_\+\+T\+O\+O\+\_\+\+B\+I\+G@{E\+R\+R\+O\+R\+\_\+\+P\+A\+C\+K\+E\+T\+\_\+\+T\+O\+O\+\_\+\+B\+I\+G}}
+\index{E\+R\+R\+O\+R\+\_\+\+P\+A\+C\+K\+E\+T\+\_\+\+T\+O\+O\+\_\+\+B\+I\+G@{E\+R\+R\+O\+R\+\_\+\+P\+A\+C\+K\+E\+T\+\_\+\+T\+O\+O\+\_\+\+B\+I\+G}!tnnf@{tnnf}}
+\subsubsection[{E\+R\+R\+O\+R\+\_\+\+P\+A\+C\+K\+E\+T\+\_\+\+T\+O\+O\+\_\+\+B\+I\+G}]{\setlength{\rightskip}{0pt plus 5cm}const uint32\+\_\+t tnnf\+::\+E\+R\+R\+O\+R\+\_\+\+P\+A\+C\+K\+E\+T\+\_\+\+T\+O\+O\+\_\+\+B\+I\+G = 200}\label{namespacetnnf_aad4f66acf18647decd893947c7ddaea7}
+\hypertarget{namespacetnnf_a21a988a81b1093f0320978991010a99f}{}\index{tnnf@{tnnf}!E\+R\+R\+O\+R\+\_\+\+P\+A\+C\+K\+E\+T\+B\+U\+F\+F\+E\+R\+\_\+\+T\+O\+O\+\_\+\+S\+M\+A\+L\+L@{E\+R\+R\+O\+R\+\_\+\+P\+A\+C\+K\+E\+T\+B\+U\+F\+F\+E\+R\+\_\+\+T\+O\+O\+\_\+\+S\+M\+A\+L\+L}}
+\index{E\+R\+R\+O\+R\+\_\+\+P\+A\+C\+K\+E\+T\+B\+U\+F\+F\+E\+R\+\_\+\+T\+O\+O\+\_\+\+S\+M\+A\+L\+L@{E\+R\+R\+O\+R\+\_\+\+P\+A\+C\+K\+E\+T\+B\+U\+F\+F\+E\+R\+\_\+\+T\+O\+O\+\_\+\+S\+M\+A\+L\+L}!tnnf@{tnnf}}
+\subsubsection[{E\+R\+R\+O\+R\+\_\+\+P\+A\+C\+K\+E\+T\+B\+U\+F\+F\+E\+R\+\_\+\+T\+O\+O\+\_\+\+S\+M\+A\+L\+L}]{\setlength{\rightskip}{0pt plus 5cm}const uint32\+\_\+t tnnf\+::\+E\+R\+R\+O\+R\+\_\+\+P\+A\+C\+K\+E\+T\+B\+U\+F\+F\+E\+R\+\_\+\+T\+O\+O\+\_\+\+S\+M\+A\+L\+L = 250}\label{namespacetnnf_a21a988a81b1093f0320978991010a99f}
+\hypertarget{namespacetnnf_af662f0c35b0eb75729eb6ae1ae3e48df}{}\index{tnnf@{tnnf}!E\+R\+R\+O\+R\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R\+\_\+\+F\+A\+I\+L@{E\+R\+R\+O\+R\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R\+\_\+\+F\+A\+I\+L}}
+\index{E\+R\+R\+O\+R\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R\+\_\+\+F\+A\+I\+L@{E\+R\+R\+O\+R\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R\+\_\+\+F\+A\+I\+L}!tnnf@{tnnf}}
+\subsubsection[{E\+R\+R\+O\+R\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R\+\_\+\+F\+A\+I\+L}]{\setlength{\rightskip}{0pt plus 5cm}const uint32\+\_\+t tnnf\+::\+E\+R\+R\+O\+R\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R\+\_\+\+F\+A\+I\+L = 300}\label{namespacetnnf_af662f0c35b0eb75729eb6ae1ae3e48df}
+\hypertarget{namespacetnnf_a2a52f505fa0fc0f44aa4277b2f2a4eaa}{}\index{tnnf@{tnnf}!E\+R\+R\+O\+R\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R\+\_\+\+N\+O\+\_\+\+T\+A\+R\+G\+E\+T@{E\+R\+R\+O\+R\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R\+\_\+\+N\+O\+\_\+\+T\+A\+R\+G\+E\+T}}
+\index{E\+R\+R\+O\+R\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R\+\_\+\+N\+O\+\_\+\+T\+A\+R\+G\+E\+T@{E\+R\+R\+O\+R\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R\+\_\+\+N\+O\+\_\+\+T\+A\+R\+G\+E\+T}!tnnf@{tnnf}}
+\subsubsection[{E\+R\+R\+O\+R\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R\+\_\+\+N\+O\+\_\+\+T\+A\+R\+G\+E\+T}]{\setlength{\rightskip}{0pt plus 5cm}const uint32\+\_\+t tnnf\+::\+E\+R\+R\+O\+R\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R\+\_\+\+N\+O\+\_\+\+T\+A\+R\+G\+E\+T = 302}\label{namespacetnnf_a2a52f505fa0fc0f44aa4277b2f2a4eaa}
+\hypertarget{namespacetnnf_a1e6246ce42ad3d14b27cddb40dbe2e92}{}\index{tnnf@{tnnf}!E\+R\+R\+O\+R\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R\+\_\+\+T\+I\+M\+E\+O\+U\+T@{E\+R\+R\+O\+R\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R\+\_\+\+T\+I\+M\+E\+O\+U\+T}}
+\index{E\+R\+R\+O\+R\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R\+\_\+\+T\+I\+M\+E\+O\+U\+T@{E\+R\+R\+O\+R\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R\+\_\+\+T\+I\+M\+E\+O\+U\+T}!tnnf@{tnnf}}
+\subsubsection[{E\+R\+R\+O\+R\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R\+\_\+\+T\+I\+M\+E\+O\+U\+T}]{\setlength{\rightskip}{0pt plus 5cm}const uint32\+\_\+t tnnf\+::\+E\+R\+R\+O\+R\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R\+\_\+\+T\+I\+M\+E\+O\+U\+T = 301}\label{namespacetnnf_a1e6246ce42ad3d14b27cddb40dbe2e92}
+\hypertarget{namespacetnnf_afe273a345b20de223f7e6201d9660fb8}{}\index{tnnf@{tnnf}!E\+R\+R\+O\+R\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+A\+C\+C\+E\+P\+T@{E\+R\+R\+O\+R\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+A\+C\+C\+E\+P\+T}}
+\index{E\+R\+R\+O\+R\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+A\+C\+C\+E\+P\+T@{E\+R\+R\+O\+R\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+A\+C\+C\+E\+P\+T}!tnnf@{tnnf}}
+\subsubsection[{E\+R\+R\+O\+R\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+A\+C\+C\+E\+P\+T}]{\setlength{\rightskip}{0pt plus 5cm}const uint32\+\_\+t tnnf\+::\+E\+R\+R\+O\+R\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+A\+C\+C\+E\+P\+T = 113}\label{namespacetnnf_afe273a345b20de223f7e6201d9660fb8}
+\hypertarget{namespacetnnf_add560b64e8aecd3281b3c91a0d16d362}{}\index{tnnf@{tnnf}!E\+R\+R\+O\+R\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+B\+I\+N\+D@{E\+R\+R\+O\+R\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+B\+I\+N\+D}}
+\index{E\+R\+R\+O\+R\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+B\+I\+N\+D@{E\+R\+R\+O\+R\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+B\+I\+N\+D}!tnnf@{tnnf}}
+\subsubsection[{E\+R\+R\+O\+R\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+B\+I\+N\+D}]{\setlength{\rightskip}{0pt plus 5cm}const uint32\+\_\+t tnnf\+::\+E\+R\+R\+O\+R\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+B\+I\+N\+D = 110}\label{namespacetnnf_add560b64e8aecd3281b3c91a0d16d362}
+\hypertarget{namespacetnnf_aba852bd058879ae114c4a193dae288ba}{}\index{tnnf@{tnnf}!E\+R\+R\+O\+R\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T@{E\+R\+R\+O\+R\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T}}
+\index{E\+R\+R\+O\+R\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T@{E\+R\+R\+O\+R\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T}!tnnf@{tnnf}}
+\subsubsection[{E\+R\+R\+O\+R\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T}]{\setlength{\rightskip}{0pt plus 5cm}const uint32\+\_\+t tnnf\+::\+E\+R\+R\+O\+R\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T = 111}\label{namespacetnnf_aba852bd058879ae114c4a193dae288ba}
+\hypertarget{namespacetnnf_a51be82cdfdf6eff814be2e34de56a9a1}{}\index{tnnf@{tnnf}!E\+R\+R\+O\+R\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+C\+R\+E\+A\+T\+E@{E\+R\+R\+O\+R\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+C\+R\+E\+A\+T\+E}}
+\index{E\+R\+R\+O\+R\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+C\+R\+E\+A\+T\+E@{E\+R\+R\+O\+R\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+C\+R\+E\+A\+T\+E}!tnnf@{tnnf}}
+\subsubsection[{E\+R\+R\+O\+R\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+C\+R\+E\+A\+T\+E}]{\setlength{\rightskip}{0pt plus 5cm}const uint32\+\_\+t tnnf\+::\+E\+R\+R\+O\+R\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+C\+R\+E\+A\+T\+E = 100}\label{namespacetnnf_a51be82cdfdf6eff814be2e34de56a9a1}
+\hypertarget{namespacetnnf_a6cec59383f83c86885d8f8681106d003}{}\index{tnnf@{tnnf}!E\+R\+R\+O\+R\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+G\+E\+T\+S\+O\+C\+K\+O\+P\+T@{E\+R\+R\+O\+R\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+G\+E\+T\+S\+O\+C\+K\+O\+P\+T}}
+\index{E\+R\+R\+O\+R\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+G\+E\+T\+S\+O\+C\+K\+O\+P\+T@{E\+R\+R\+O\+R\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+G\+E\+T\+S\+O\+C\+K\+O\+P\+T}!tnnf@{tnnf}}
+\subsubsection[{E\+R\+R\+O\+R\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+G\+E\+T\+S\+O\+C\+K\+O\+P\+T}]{\setlength{\rightskip}{0pt plus 5cm}const uint32\+\_\+t tnnf\+::\+E\+R\+R\+O\+R\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+G\+E\+T\+S\+O\+C\+K\+O\+P\+T = 115}\label{namespacetnnf_a6cec59383f83c86885d8f8681106d003}
+\hypertarget{namespacetnnf_a0d1722c8223224a7453b2d66b8982af0}{}\index{tnnf@{tnnf}!E\+R\+R\+O\+R\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+H\+A\+N\+G\+U\+P@{E\+R\+R\+O\+R\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+H\+A\+N\+G\+U\+P}}
+\index{E\+R\+R\+O\+R\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+H\+A\+N\+G\+U\+P@{E\+R\+R\+O\+R\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+H\+A\+N\+G\+U\+P}!tnnf@{tnnf}}
+\subsubsection[{E\+R\+R\+O\+R\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+H\+A\+N\+G\+U\+P}]{\setlength{\rightskip}{0pt plus 5cm}const uint32\+\_\+t tnnf\+::\+E\+R\+R\+O\+R\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+H\+A\+N\+G\+U\+P = 118}\label{namespacetnnf_a0d1722c8223224a7453b2d66b8982af0}
+\hypertarget{namespacetnnf_a3faa5f965d97387038d335b38db45285}{}\index{tnnf@{tnnf}!E\+R\+R\+O\+R\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+L\+I\+S\+T\+E\+N@{E\+R\+R\+O\+R\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+L\+I\+S\+T\+E\+N}}
+\index{E\+R\+R\+O\+R\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+L\+I\+S\+T\+E\+N@{E\+R\+R\+O\+R\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+L\+I\+S\+T\+E\+N}!tnnf@{tnnf}}
+\subsubsection[{E\+R\+R\+O\+R\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+L\+I\+S\+T\+E\+N}]{\setlength{\rightskip}{0pt plus 5cm}const uint32\+\_\+t tnnf\+::\+E\+R\+R\+O\+R\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+L\+I\+S\+T\+E\+N = 112}\label{namespacetnnf_a3faa5f965d97387038d335b38db45285}
+\hypertarget{namespacetnnf_a3e5567624ad53b0da7c9bd2e8fa0f3eb}{}\index{tnnf@{tnnf}!E\+R\+R\+O\+R\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+R\+E\+C\+E\+I\+V\+E@{E\+R\+R\+O\+R\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+R\+E\+C\+E\+I\+V\+E}}
+\index{E\+R\+R\+O\+R\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+R\+E\+C\+E\+I\+V\+E@{E\+R\+R\+O\+R\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+R\+E\+C\+E\+I\+V\+E}!tnnf@{tnnf}}
+\subsubsection[{E\+R\+R\+O\+R\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+R\+E\+C\+E\+I\+V\+E}]{\setlength{\rightskip}{0pt plus 5cm}const uint32\+\_\+t tnnf\+::\+E\+R\+R\+O\+R\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+R\+E\+C\+E\+I\+V\+E = 117}\label{namespacetnnf_a3e5567624ad53b0da7c9bd2e8fa0f3eb}
+\hypertarget{namespacetnnf_a55b8e5d6612e2ab58109761946028ed6}{}\index{tnnf@{tnnf}!E\+R\+R\+O\+R\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+S\+E\+N\+D@{E\+R\+R\+O\+R\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+S\+E\+N\+D}}
+\index{E\+R\+R\+O\+R\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+S\+E\+N\+D@{E\+R\+R\+O\+R\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+S\+E\+N\+D}!tnnf@{tnnf}}
+\subsubsection[{E\+R\+R\+O\+R\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+S\+E\+N\+D}]{\setlength{\rightskip}{0pt plus 5cm}const uint32\+\_\+t tnnf\+::\+E\+R\+R\+O\+R\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+S\+E\+N\+D = 116}\label{namespacetnnf_a55b8e5d6612e2ab58109761946028ed6}
+\hypertarget{namespacetnnf_ae28f1ae6799377f7d7c40bd752c1a8ca}{}\index{tnnf@{tnnf}!E\+R\+R\+O\+R\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+S\+E\+T\+S\+O\+C\+K\+O\+P\+T@{E\+R\+R\+O\+R\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+S\+E\+T\+S\+O\+C\+K\+O\+P\+T}}
+\index{E\+R\+R\+O\+R\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+S\+E\+T\+S\+O\+C\+K\+O\+P\+T@{E\+R\+R\+O\+R\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+S\+E\+T\+S\+O\+C\+K\+O\+P\+T}!tnnf@{tnnf}}
+\subsubsection[{E\+R\+R\+O\+R\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+S\+E\+T\+S\+O\+C\+K\+O\+P\+T}]{\setlength{\rightskip}{0pt plus 5cm}const uint32\+\_\+t tnnf\+::\+E\+R\+R\+O\+R\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+S\+E\+T\+S\+O\+C\+K\+O\+P\+T = 114}\label{namespacetnnf_ae28f1ae6799377f7d7c40bd752c1a8ca}
+\hypertarget{namespacetnnf_a754e3b1ba0068cba6479b08b2ebec56c}{}\index{tnnf@{tnnf}!E\+R\+R\+O\+R\+\_\+\+U\+N\+K\+N\+O\+W\+N@{E\+R\+R\+O\+R\+\_\+\+U\+N\+K\+N\+O\+W\+N}}
+\index{E\+R\+R\+O\+R\+\_\+\+U\+N\+K\+N\+O\+W\+N@{E\+R\+R\+O\+R\+\_\+\+U\+N\+K\+N\+O\+W\+N}!tnnf@{tnnf}}
+\subsubsection[{E\+R\+R\+O\+R\+\_\+\+U\+N\+K\+N\+O\+W\+N}]{\setlength{\rightskip}{0pt plus 5cm}const uint32\+\_\+t tnnf\+::\+E\+R\+R\+O\+R\+\_\+\+U\+N\+K\+N\+O\+W\+N = 0}\label{namespacetnnf_a754e3b1ba0068cba6479b08b2ebec56c}
+\hypertarget{namespacetnnf_a09f00feabd8f2363f85eaa64d9f0a1bb}{}\index{tnnf@{tnnf}!g\+Common\+Error\+Function@{g\+Common\+Error\+Function}}
+\index{g\+Common\+Error\+Function@{g\+Common\+Error\+Function}!tnnf@{tnnf}}
+\subsubsection[{g\+Common\+Error\+Function}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Common\+Error\+Function} tnnf\+::g\+Common\+Error\+Function = {\bf Default\+Common\+Error\+Callback}}\label{namespacetnnf_a09f00feabd8f2363f85eaa64d9f0a1bb}
+\hypertarget{namespacetnnf_a802200ba988ad42ccc91044d5f95d24e}{}\index{tnnf@{tnnf}!g\+Socket\+Error\+Function@{g\+Socket\+Error\+Function}}
+\index{g\+Socket\+Error\+Function@{g\+Socket\+Error\+Function}!tnnf@{tnnf}}
+\subsubsection[{g\+Socket\+Error\+Function}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Socket\+Error\+Function} tnnf\+::g\+Socket\+Error\+Function = {\bf Default\+Socket\+Error\+Callback}}\label{namespacetnnf_a802200ba988ad42ccc91044d5f95d24e}

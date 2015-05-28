@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['empty_5fpacket_5ftype',['EMPTY_PACKET_TYPE',['../classtnnf_1_1_packet.html#a91074632d9be293edd6994bab13d3e18',1,'tnnf::Packet']]],
+  ['error_5fpacket_5ftoo_5fbig',['ERROR_PACKET_TOO_BIG',['../namespacetnnf.html#aad4f66acf18647decd893947c7ddaea7',1,'tnnf']]],
+  ['error_5fpacketbuffer_5ftoo_5fsmall',['ERROR_PACKETBUFFER_TOO_SMALL',['../namespacetnnf.html#a21a988a81b1093f0320978991010a99f',1,'tnnf']]],
+  ['error_5fselector_5ffail',['ERROR_SELECTOR_FAIL',['../namespacetnnf.html#af662f0c35b0eb75729eb6ae1ae3e48df',1,'tnnf']]],
+  ['error_5fselector_5fno_5ftarget',['ERROR_SELECTOR_NO_TARGET',['../namespacetnnf.html#a2a52f505fa0fc0f44aa4277b2f2a4eaa',1,'tnnf']]],
+  ['error_5fselector_5ftimeout',['ERROR_SELECTOR_TIMEOUT',['../namespacetnnf.html#a1e6246ce42ad3d14b27cddb40dbe2e92',1,'tnnf']]],
+  ['error_5fsocket_5faccept',['ERROR_SOCKET_ACCEPT',['../namespacetnnf.html#afe273a345b20de223f7e6201d9660fb8',1,'tnnf']]],
+  ['error_5fsocket_5fbind',['ERROR_SOCKET_BIND',['../namespacetnnf.html#add560b64e8aecd3281b3c91a0d16d362',1,'tnnf']]],
+  ['error_5fsocket_5fconnect',['ERROR_SOCKET_CONNECT',['../namespacetnnf.html#aba852bd058879ae114c4a193dae288ba',1,'tnnf']]],
+  ['error_5fsocket_5fcreate',['ERROR_SOCKET_CREATE',['../namespacetnnf.html#a51be82cdfdf6eff814be2e34de56a9a1',1,'tnnf']]],
+  ['error_5fsocket_5fgetsockopt',['ERROR_SOCKET_GETSOCKOPT',['../namespacetnnf.html#a6cec59383f83c86885d8f8681106d003',1,'tnnf']]],
+  ['error_5fsocket_5fhangup',['ERROR_SOCKET_HANGUP',['../namespacetnnf.html#a0d1722c8223224a7453b2d66b8982af0',1,'tnnf']]],
+  ['error_5fsocket_5flisten',['ERROR_SOCKET_LISTEN',['../namespacetnnf.html#a3faa5f965d97387038d335b38db45285',1,'tnnf']]],
+  ['error_5fsocket_5freceive',['ERROR_SOCKET_RECEIVE',['../namespacetnnf.html#a3e5567624ad53b0da7c9bd2e8fa0f3eb',1,'tnnf']]],
+  ['error_5fsocket_5fsend',['ERROR_SOCKET_SEND',['../namespacetnnf.html#a55b8e5d6612e2ab58109761946028ed6',1,'tnnf']]],
+  ['error_5fsocket_5fsetsockopt',['ERROR_SOCKET_SETSOCKOPT',['../namespacetnnf.html#ae28f1ae6799377f7d7c40bd752c1a8ca',1,'tnnf']]],
+  ['error_5funknown',['ERROR_UNKNOWN',['../namespacetnnf.html#a754e3b1ba0068cba6479b08b2ebec56c',1,'tnnf']]]
+];

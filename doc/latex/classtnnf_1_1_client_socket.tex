@@ -1,0 +1,149 @@
+\hypertarget{classtnnf_1_1_client_socket}{}\section{tnnf\+:\+:Client\+Socket Class Reference}
+\label{classtnnf_1_1_client_socket}\index{tnnf\+::\+Client\+Socket@{tnnf\+::\+Client\+Socket}}
+
+
+This class can connect to a \hyperlink{classtnnf_1_1_listener_socket}{Listener\+Socket}, and communicate with another T\+C\+P socket.  
+
+
+
+
+{\ttfamily \#include $<$Client\+Socket.\+hpp$>$}
+
+Inheritance diagram for tnnf\+:\+:Client\+Socket\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classtnnf_1_1_client_socket}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtnnf_1_1_client_socket_a2b7a6bce1c0caf339c260dfe2bb7265e}{Client\+Socket} (const \hyperlink{classtnnf_1_1_address}{Address} \&server\+Address)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hyperlink{classtnnf_1_1_client_socket_ac6339f118f7f4f9854bcb736d3ee2e57}{Client\+Socket} (const \hyperlink{classtnnf_1_1_address}{Address} \&server\+Address, \hyperlink{classtnnf_1_1_address}{Address} address)
+\item 
+\hyperlink{classtnnf_1_1_client_socket_a597f62b7381bf35dfa2a972897459949}{Client\+Socket} (const \hyperlink{classtnnf_1_1_client_socket}{Client\+Socket} \&other)=default
+\item 
+\hyperlink{classtnnf_1_1_client_socket}{Client\+Socket} \& \hyperlink{classtnnf_1_1_client_socket_ad42dda3824a351a80135e43ee8ac5bfb}{operator=} (const \hyperlink{classtnnf_1_1_client_socket}{Client\+Socket} \&other)=default
+\item 
+\hyperlink{classtnnf_1_1_client_socket_a51affce1875948f4a1f6b51fdc3c2c27}{Client\+Socket} (\hyperlink{classtnnf_1_1_client_socket}{Client\+Socket} \&\&other) noexcept=default
+\item 
+\hyperlink{classtnnf_1_1_client_socket}{Client\+Socket} \& \hyperlink{classtnnf_1_1_client_socket_aa940a7f3d435ad59bffcc531f34e2ed4}{operator=} (\hyperlink{classtnnf_1_1_client_socket}{Client\+Socket} \&\&other)=default
+\item 
+void \hyperlink{classtnnf_1_1_client_socket_ad798fd02300826fe2dd15b6102f48cd3}{swap} (\hyperlink{classtnnf_1_1_client_socket}{Client\+Socket} \&other) noexcept
+\begin{DoxyCompactList}\small\item\em Swaps the references between two Client\+Sockets. \end{DoxyCompactList}\item 
+\hyperlink{classtnnf_1_1_client_socket_afa1e71789829627c1410e8b470d69023}{$\sim$\+Client\+Socket} ()
+\item 
+int \hyperlink{classtnnf_1_1_client_socket_a94d3333e52d1d18681b8098ceaca845c}{connect} ()
+\begin{DoxyCompactList}\small\item\em Connect to the server. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This class can connect to a \hyperlink{classtnnf_1_1_listener_socket}{Listener\+Socket}, and communicate with another T\+C\+P socket. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classtnnf_1_1_client_socket_a2b7a6bce1c0caf339c260dfe2bb7265e}{}\index{tnnf\+::\+Client\+Socket@{tnnf\+::\+Client\+Socket}!Client\+Socket@{Client\+Socket}}
+\index{Client\+Socket@{Client\+Socket}!tnnf\+::\+Client\+Socket@{tnnf\+::\+Client\+Socket}}
+\subsubsection[{Client\+Socket}]{\setlength{\rightskip}{0pt plus 5cm}tnnf\+::\+Client\+Socket\+::\+Client\+Socket (
+\begin{DoxyParamCaption}
+\item[{const {\bf Address} \&}]{server\+Address}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classtnnf_1_1_client_socket_a2b7a6bce1c0caf339c260dfe2bb7265e}
+
+
+Constructor. 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classtnnf_1_1_socket_a335fc92da4c521466f7a3b6b8d148677}{Socket\+::get\+Socket()} for error handling. 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em server\+Address} & The Ip address of the server where you want to connect.\\
+\hline
+{\em server\+Address} & The Ip address of the server where you want to connect. \\
+\hline
+{\em address} & Your ip address, through which you want to communicate. The socket will be bound to this address. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classtnnf_1_1_client_socket_ac6339f118f7f4f9854bcb736d3ee2e57}{}\index{tnnf\+::\+Client\+Socket@{tnnf\+::\+Client\+Socket}!Client\+Socket@{Client\+Socket}}
+\index{Client\+Socket@{Client\+Socket}!tnnf\+::\+Client\+Socket@{tnnf\+::\+Client\+Socket}}
+\subsubsection[{Client\+Socket}]{\setlength{\rightskip}{0pt plus 5cm}tnnf\+::\+Client\+Socket\+::\+Client\+Socket (
+\begin{DoxyParamCaption}
+\item[{const {\bf Address} \&}]{server\+Address, }
+\item[{{\bf Address}}]{address}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classtnnf_1_1_client_socket_ac6339f118f7f4f9854bcb736d3ee2e57}
+\hypertarget{classtnnf_1_1_client_socket_a597f62b7381bf35dfa2a972897459949}{}\index{tnnf\+::\+Client\+Socket@{tnnf\+::\+Client\+Socket}!Client\+Socket@{Client\+Socket}}
+\index{Client\+Socket@{Client\+Socket}!tnnf\+::\+Client\+Socket@{tnnf\+::\+Client\+Socket}}
+\subsubsection[{Client\+Socket}]{\setlength{\rightskip}{0pt plus 5cm}tnnf\+::\+Client\+Socket\+::\+Client\+Socket (
+\begin{DoxyParamCaption}
+\item[{const {\bf Client\+Socket} \&}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}\label{classtnnf_1_1_client_socket_a597f62b7381bf35dfa2a972897459949}
+\hypertarget{classtnnf_1_1_client_socket_a51affce1875948f4a1f6b51fdc3c2c27}{}\index{tnnf\+::\+Client\+Socket@{tnnf\+::\+Client\+Socket}!Client\+Socket@{Client\+Socket}}
+\index{Client\+Socket@{Client\+Socket}!tnnf\+::\+Client\+Socket@{tnnf\+::\+Client\+Socket}}
+\subsubsection[{Client\+Socket}]{\setlength{\rightskip}{0pt plus 5cm}tnnf\+::\+Client\+Socket\+::\+Client\+Socket (
+\begin{DoxyParamCaption}
+\item[{{\bf Client\+Socket} \&\&}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}\label{classtnnf_1_1_client_socket_a51affce1875948f4a1f6b51fdc3c2c27}
+\hypertarget{classtnnf_1_1_client_socket_afa1e71789829627c1410e8b470d69023}{}\index{tnnf\+::\+Client\+Socket@{tnnf\+::\+Client\+Socket}!````~Client\+Socket@{$\sim$\+Client\+Socket}}
+\index{````~Client\+Socket@{$\sim$\+Client\+Socket}!tnnf\+::\+Client\+Socket@{tnnf\+::\+Client\+Socket}}
+\subsubsection[{$\sim$\+Client\+Socket}]{\setlength{\rightskip}{0pt plus 5cm}tnnf\+::\+Client\+Socket\+::$\sim$\+Client\+Socket (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classtnnf_1_1_client_socket_afa1e71789829627c1410e8b470d69023}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classtnnf_1_1_client_socket_a94d3333e52d1d18681b8098ceaca845c}{}\index{tnnf\+::\+Client\+Socket@{tnnf\+::\+Client\+Socket}!connect@{connect}}
+\index{connect@{connect}!tnnf\+::\+Client\+Socket@{tnnf\+::\+Client\+Socket}}
+\subsubsection[{connect}]{\setlength{\rightskip}{0pt plus 5cm}void tnnf\+::\+Client\+Socket\+::connect (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classtnnf_1_1_client_socket_a94d3333e52d1d18681b8098ceaca845c}
+
+
+Connect to the server. 
+
+\begin{DoxyReturn}{Returns}
+with -\/1 if error occurred, errno set to indicate the error. 
+\end{DoxyReturn}
+\hypertarget{classtnnf_1_1_client_socket_ad42dda3824a351a80135e43ee8ac5bfb}{}\index{tnnf\+::\+Client\+Socket@{tnnf\+::\+Client\+Socket}!operator=@{operator=}}
+\index{operator=@{operator=}!tnnf\+::\+Client\+Socket@{tnnf\+::\+Client\+Socket}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Client\+Socket}\& tnnf\+::\+Client\+Socket\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Client\+Socket} \&}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}\label{classtnnf_1_1_client_socket_ad42dda3824a351a80135e43ee8ac5bfb}
+\hypertarget{classtnnf_1_1_client_socket_aa940a7f3d435ad59bffcc531f34e2ed4}{}\index{tnnf\+::\+Client\+Socket@{tnnf\+::\+Client\+Socket}!operator=@{operator=}}
+\index{operator=@{operator=}!tnnf\+::\+Client\+Socket@{tnnf\+::\+Client\+Socket}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Client\+Socket}\& tnnf\+::\+Client\+Socket\+::operator= (
+\begin{DoxyParamCaption}
+\item[{{\bf Client\+Socket} \&\&}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}\label{classtnnf_1_1_client_socket_aa940a7f3d435ad59bffcc531f34e2ed4}
+\hypertarget{classtnnf_1_1_client_socket_ad798fd02300826fe2dd15b6102f48cd3}{}\index{tnnf\+::\+Client\+Socket@{tnnf\+::\+Client\+Socket}!swap@{swap}}
+\index{swap@{swap}!tnnf\+::\+Client\+Socket@{tnnf\+::\+Client\+Socket}}
+\subsubsection[{swap}]{\setlength{\rightskip}{0pt plus 5cm}void tnnf\+::\+Client\+Socket\+::swap (
+\begin{DoxyParamCaption}
+\item[{{\bf Client\+Socket} \&}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}\label{classtnnf_1_1_client_socket_ad798fd02300826fe2dd15b6102f48cd3}
+
+
+Swaps the references between two Client\+Sockets. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Another \hyperlink{classtnnf_1_1_client_socket}{Client\+Socket} \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/smoke/files/prog/git\+\_\+tnnf/include/tnnf/\hyperlink{_client_socket_8hpp}{Client\+Socket.\+hpp}\end{DoxyCompactItemize}
