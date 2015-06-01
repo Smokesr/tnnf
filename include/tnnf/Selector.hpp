@@ -27,6 +27,7 @@ freely, subject to the following restrictions:
 #include <vector>
 
 #include "Socket.hpp"
+#include "tnnf.hpp"
 
 namespace tnnf {
     /*! \class Selector
@@ -135,17 +136,24 @@ namespace tnnf {
 
             /*! \fn void update()
                 \brief Get the state of the sockets and fill the user provided arrays.
-                \return with 0 on timeout, -1 if error occurred, errno set to indicate the error.*/
-            int update() {
+                    If the selector failed, errno set to indicate the error.*/
+            void update() {
                 if(mFdReadablePointer != nullptr || mFdWritablePointer != nullptr || mFdFaultyPointer != nullptr) {
                     mFdWritable = mFdSockets;
                     mFdReadable = mFdSockets;
                     mFdFaulty = mFdSockets;
 
-                    int selectError = 0;
+                    int selectError;
                     if((selectError = select(mSocketsMax+1, mFdReadablePointer, mFdWritablePointer, mFdFaultyPointer, mTimeout)) <= 0) {
                         clearTemp();
-                        return selectError;
+                        if(selectError == 0) {
+                            gCommonErrorFunction(ERROR_SELECTOR_TIMEOUT, "Selector timed out.");
+                            return;
+                        }
+                        else {
+                            gCommonErrorFunction(ERROR_SELECTOR_FAIL, "Selector error.");
+                            return;
+                        }
                     }
                     else {
                         if(mFdWritablePointer != nullptr) {
@@ -177,11 +185,11 @@ namespace tnnf {
                                 }
                             }
                         }
-                        return selectError;
                     }
                 }
                 else {
-                    return -2;
+                    gCommonErrorFunction(ERROR_SELECTOR_NO_TARGET, "Selector does not have target.");
+                    return;
                 }
             }
 
