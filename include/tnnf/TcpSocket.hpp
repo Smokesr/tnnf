@@ -179,7 +179,7 @@ namespace tnnf {
                     }
 
                     buffer.buildPackets(currentlyReceived);
-                } while(!buffer.isPacketsStored());
+                } while(!buffer.isPacketStored());
             }
 
             /*! \fn void receive(PacketBuffer& buffer)
