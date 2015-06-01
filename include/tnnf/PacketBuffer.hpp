@@ -1,5 +1,5 @@
 /*! \file PacketBuffer.hpp
-    \brief build received packets from bytes and store them.*/
+    \brief Build received packets from bytes and store them.*/
 
 /*
 Copyright (c) 2015 Máté Vágó
@@ -142,9 +142,9 @@ namespace tnnf {
                 }
             }
 
-            /*! \fn bool isPacketsStored()
+            /*! \fn bool isPacketStored()
                 \return true if there are completed packets, false when not*/
-            bool isPacketsStored() noexcept {
+            bool isPacketStored() noexcept {
                 return !mStoredPackets.empty();
             }
 
