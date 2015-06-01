@@ -35,7 +35,7 @@ You just need the address of the server and connect to it.
 #include "tnnf/Address.hpp"
 #include "tnnf/ClientSocket.hpp"
 
-tnnf::ClientSocket server(Address("127.0.0.1", 25565));
+tnnf::ClientSocket server(tnnf::Address("127.0.0.1", 25565));
 
 server.connect();
 ```
@@ -48,21 +48,26 @@ This is not necessary, if you test only on your machine, but if you want to send
 Send:
 
 ```cpp
+#include "tnnf/Packet.hpp"
+
 //I suppose you have a built connection.
 
 tnnf::Packet msg1(0, "Hello!"); //Arguments: packet type, and the data.
 tnnf::Packet msg2(1, std::to_string(21));
 
-connection.send(msg1);
-connection.send(msg2);
+server.send(msg1);
+server.send(msg2);
 ```
 
 Receive:
 ```cpp
-tnnf::PacketBuffer buffer(512);
+#include "tnnf/Packet.hpp"
+#include "tnnf/PacketBuffer.hpp"
+
+tnnf::PacketBuffer buffer;
 tnnf::Packet receivedMsg;
 
-connection.receive(buffer);
+client.receive(buffer);
 
 while(buffer.isPacketStored()) {
 	receivedMsg = buffer.getPacket();
@@ -73,13 +78,14 @@ while(buffer.isPacketStored()) {
 	else if(receivedMsg.getType() == 1) {
 		int number = 5;
 		number += atoi(receivedMsg.getData().c_str());
+		std::cout << number << std::endl;
 	}
 }
 ```
 
 #### How to use the selector?
 
-You can get lists of sockets from selector, which is readable, writable or got error. On The example we will only check the readable sockets.
+You can get lists of sockets from selector, which is readable, writable or got error. On The example we will only check the readable sockets. I recommend to override the default socket error callback, at least for handling the hang up.
 
 ```cpp
 #include <vector>
@@ -90,8 +96,8 @@ You can get lists of sockets from selector, which is readable, writable or got e
 #include "tnnf/ListenerSocket.hpp"
 #include "tnnf/Selector.hpp"
 
-tnnf::PacketBuffer buffer(512);
-tnnf::ListenerSocket listener(Address("127.0.0.1", 25565), 10);
+tnnf::PacketBuffer buffer;
+tnnf::ListenerSocket listener(tnnf::Address("127.0.0.1", 25565), 10);
 std::vector<tnnf::Socket*> readableSockets; //array, where the pointers to readable socket will be stored.
 tnnf::Selector selector(&readableSockets, nullptr, nullptr); //Arguments: readable array, writable array, faulty array
 
@@ -111,7 +117,7 @@ while(!exit) {
 			sock->receive(buffer); //receive the packets
 		
 			while(buffer.isPacketStored()) { //if the buffer not empty
-				Packet receivedPacket = buffer.getPacket(); 
+				tnnf::Packet receivedPacket = buffer.getPacket(); 
 				
 				std::cout << receivedPacket.getType() << " - " << receivedPacket.getData() << std::endl;		
 			}		
@@ -126,7 +132,7 @@ You have to define two methods. One for socket errors, and one for others. After
 The socket error events are listed in Socket.hpp, and the common error codes are in tnnf.hpp.
 
 ```cpp
-	void TnnfSocketErrorCallback(Socket &faultySocket, const uint32_t &errorEvent, int &cErrno) {
+	void TnnfSocketErrorCallback(tnnf::Socket &faultySocket, const uint32_t &errorEvent, int &cErrno) {
 		//handle errors here
 	}
 ```
