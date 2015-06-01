@@ -30,6 +30,7 @@ freely, subject to the following restrictions:
 
 #include "Address.hpp"
 #include "Packet.hpp"
+#include "PacketBuffer.hpp"
 
 namespace tnnf {
 

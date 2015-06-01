@@ -24,6 +24,7 @@ freely, subject to the following restrictions:
 #ifndef TNNF_HPP
 #define TNNF_HPP
 
+#include <iostream>
 #include <cstring>
 
 //! \namespace tnnf
