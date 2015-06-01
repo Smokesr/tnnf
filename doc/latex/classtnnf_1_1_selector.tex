@@ -26,8 +26,8 @@ void \hyperlink{classtnnf_1_1_selector_ab2b2bf232079c169a5f28616c54d6e97}{swap} 
 \begin{DoxyCompactList}\small\item\em Swap the references between two \hyperlink{classtnnf_1_1_selector}{Selector}. \end{DoxyCompactList}\item 
 \hyperlink{classtnnf_1_1_selector_a6042ab1f47fabf155e3d553f5915cb20}{$\sim$\+Selector} ()
 \begin{DoxyCompactList}\small\item\em Destructor. All sockets will be unwatched and destroyed if it is necessary. \end{DoxyCompactList}\item 
-int \hyperlink{classtnnf_1_1_selector_a56fd12ff21981124269b5bd5088af35e}{update} ()
-\begin{DoxyCompactList}\small\item\em Get the state of the sockets and fill the user provided arrays. \end{DoxyCompactList}\item 
+void \hyperlink{classtnnf_1_1_selector_a56fd12ff21981124269b5bd5088af35e}{update} ()
+\begin{DoxyCompactList}\small\item\em Get the state of the sockets and fill the user provided arrays. If the selector failed, errno set to indicate the error. \end{DoxyCompactList}\item 
 {\footnotesize template$<$typename Socket\+Type $>$ }\\void \hyperlink{classtnnf_1_1_selector_a439ee1a5d523971b0e534d33e3949fcb}{add} (Socket\+Type \&sock) noexcept
 \begin{DoxyCompactList}\small\item\em Adds a socket to the \hyperlink{classtnnf_1_1_selector}{Selector}. \end{DoxyCompactList}\item 
 void \hyperlink{classtnnf_1_1_selector_a72c6a0be81609137a5642651fd2e2538}{remove} (\hyperlink{classtnnf_1_1_socket}{Socket} \&sock) noexcept
@@ -282,11 +282,8 @@ Swap the references between two \hyperlink{classtnnf_1_1_selector}{Selector}.
 )\hspace{0.3cm}{\ttfamily [inline]}}\label{classtnnf_1_1_selector_a56fd12ff21981124269b5bd5088af35e}
 
 
-Get the state of the sockets and fill the user provided arrays. 
+Get the state of the sockets and fill the user provided arrays. If the selector failed, errno set to indicate the error. 
 
-\begin{DoxyReturn}{Returns}
-with 0 on timeout, -\/1 if error occurred, errno set to indicate the error. 
-\end{DoxyReturn}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
