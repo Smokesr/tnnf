@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>Terribly Named NetFramework: tnnf::TcpSocket Class Reference</title>
+<title>Terribly Named NetFramework: tnnf::UdpSocket Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -84,76 +84,78 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespacetnnf.html">tnnf</a></li><li class="navelem"><a class="el" href="classtnnf_1_1_tcp_socket.html">TcpSocket</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacetnnf.html">tnnf</a></li><li class="navelem"><a class="el" href="classtnnf_1_1_udp_socket.html">UdpSocket</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pro-static-methods">Static Protected Member Functions</a> &#124;
-<a href="classtnnf_1_1_tcp_socket-members.html">List of all members</a>  </div>
+<a href="classtnnf_1_1_udp_socket-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">tnnf::TcpSocket Class Reference</div>  </div>
+<div class="title">tnnf::UdpSocket Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>This class makes possible to build TCP connections, sending and receiving packets.  
- <a href="classtnnf_1_1_tcp_socket.html#details">More...</a></p>
-
-<p><code>#include &lt;<a class="el" href="_tcp_socket_8hpp_source.html">TcpSocket.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="_udp_socket_8hpp_source.html">UdpSocket.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for tnnf::TcpSocket:</div>
+Inheritance diagram for tnnf::UdpSocket:</div>
 <div class="dyncontent">
  <div class="center">
-  <img src="classtnnf_1_1_tcp_socket.png" usemap="#tnnf::TcpSocket_map" alt=""/>
-  <map id="tnnf::TcpSocket_map" name="tnnf::TcpSocket_map">
-<area href="classtnnf_1_1_socket.html" title="This is an abstract class. All other type of sockets derive from this. " alt="tnnf::Socket" shape="rect" coords="66,0,188,24"/>
-<area href="classtnnf_1_1_client_socket.html" title="This class can connect to a ListenerSocket, and communicate with another TCP socket. " alt="tnnf::ClientSocket" shape="rect" coords="0,112,122,136"/>
-<area href="classtnnf_1_1_listener_socket.html" title="This class wait for tcp connections, and make a socket from them. " alt="tnnf::ListenerSocket" shape="rect" coords="132,112,254,136"/>
+  <img src="classtnnf_1_1_udp_socket.png" usemap="#tnnf::UdpSocket_map" alt=""/>
+  <map id="tnnf::UdpSocket_map" name="tnnf::UdpSocket_map">
+<area href="classtnnf_1_1_socket.html" title="This is an abstract class. All other type of sockets derive from this. " alt="tnnf::Socket" shape="rect" coords="0,0,99,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a99a359023e849d77baf1b0e7566116d7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtnnf_1_1_tcp_socket.html#a99a359023e849d77baf1b0e7566116d7">TcpSocket</a> (const <a class="el" href="classtnnf_1_1_tcp_socket.html">TcpSocket</a> &amp;other)=default</td></tr>
-<tr class="separator:a99a359023e849d77baf1b0e7566116d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27cd1fcee0d7f961555383a89b7725ef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtnnf_1_1_tcp_socket.html">TcpSocket</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtnnf_1_1_tcp_socket.html#a27cd1fcee0d7f961555383a89b7725ef">operator=</a> (const <a class="el" href="classtnnf_1_1_tcp_socket.html">TcpSocket</a> &amp;other)=default</td></tr>
-<tr class="separator:a27cd1fcee0d7f961555383a89b7725ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af13142e742635325c78a9201bebb7c9d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtnnf_1_1_tcp_socket.html#af13142e742635325c78a9201bebb7c9d">TcpSocket</a> (<a class="el" href="classtnnf_1_1_tcp_socket.html">TcpSocket</a> &amp;&amp;other) noexcept=default</td></tr>
-<tr class="separator:af13142e742635325c78a9201bebb7c9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afbe6c348aaffb7b3efca529e6b2250bd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtnnf_1_1_tcp_socket.html">TcpSocket</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtnnf_1_1_tcp_socket.html#afbe6c348aaffb7b3efca529e6b2250bd">operator=</a> (<a class="el" href="classtnnf_1_1_tcp_socket.html">TcpSocket</a> &amp;&amp;other)=default</td></tr>
-<tr class="separator:afbe6c348aaffb7b3efca529e6b2250bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a298fedb5dd30eee151175e95164d7373"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtnnf_1_1_tcp_socket.html#a298fedb5dd30eee151175e95164d7373">swap</a> (<a class="el" href="classtnnf_1_1_tcp_socket.html">TcpSocket</a> &amp;other) noexcept</td></tr>
-<tr class="memdesc:a298fedb5dd30eee151175e95164d7373"><td class="mdescLeft">&#160;</td><td class="mdescRight">Swap the references between two TcpSockets.  <a href="#a298fedb5dd30eee151175e95164d7373">More...</a><br /></td></tr>
-<tr class="separator:a298fedb5dd30eee151175e95164d7373"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc468cda1569604b3514aa6c80ae19d0"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtnnf_1_1_tcp_socket.html#afc468cda1569604b3514aa6c80ae19d0">~TcpSocket</a> ()</td></tr>
-<tr class="memdesc:afc468cda1569604b3514aa6c80ae19d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#afc468cda1569604b3514aa6c80ae19d0">More...</a><br /></td></tr>
-<tr class="separator:afc468cda1569604b3514aa6c80ae19d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7aa8f759eb3b96498b0a99bffd3e42e1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtnnf_1_1_tcp_socket.html#a7aa8f759eb3b96498b0a99bffd3e42e1">send</a> (const <a class="el" href="classtnnf_1_1_packet.html">Packet</a> &amp;packet, <a class="el" href="classtnnf_1_1_address.html">Address</a> &amp;address, const int &amp;flags) noexceptfinal</td></tr>
-<tr class="memdesc:a7aa8f759eb3b96498b0a99bffd3e42e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends the specified packet to the stored address with the specified flags.  <a href="#a7aa8f759eb3b96498b0a99bffd3e42e1">More...</a><br /></td></tr>
-<tr class="separator:a7aa8f759eb3b96498b0a99bffd3e42e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:accbb5359d1cc9580bab8f209c85581ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtnnf_1_1_tcp_socket.html#accbb5359d1cc9580bab8f209c85581ed">send</a> (const <a class="el" href="classtnnf_1_1_packet.html">Packet</a> &amp;packet, <a class="el" href="classtnnf_1_1_address.html">Address</a> &amp;address) noexceptfinal</td></tr>
-<tr class="memdesc:accbb5359d1cc9580bab8f209c85581ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends the specified packet to the stored address with the stored flags.  <a href="#accbb5359d1cc9580bab8f209c85581ed">More...</a><br /></td></tr>
-<tr class="separator:accbb5359d1cc9580bab8f209c85581ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb529ca692b31b0154dc5d007d4129f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtnnf_1_1_tcp_socket.html#adb529ca692b31b0154dc5d007d4129f9">send</a> (const <a class="el" href="classtnnf_1_1_packet.html">Packet</a> &amp;packet, const int &amp;flags) noexceptfinal</td></tr>
-<tr class="memdesc:adb529ca692b31b0154dc5d007d4129f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends the specified packet to the stored address with the specified flags.  <a href="#adb529ca692b31b0154dc5d007d4129f9">More...</a><br /></td></tr>
-<tr class="separator:adb529ca692b31b0154dc5d007d4129f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69f6fe0ca7e90ddfdcbd894056baed88"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtnnf_1_1_tcp_socket.html#a69f6fe0ca7e90ddfdcbd894056baed88">send</a> (const <a class="el" href="classtnnf_1_1_packet.html">Packet</a> &amp;packet) noexceptfinal</td></tr>
-<tr class="memdesc:a69f6fe0ca7e90ddfdcbd894056baed88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends the specified packet to the stored address with the stored flags.  <a href="#a69f6fe0ca7e90ddfdcbd894056baed88">More...</a><br /></td></tr>
-<tr class="separator:a69f6fe0ca7e90ddfdcbd894056baed88"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae713b6c9c9552af781989ec5382158d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtnnf_1_1_tcp_socket.html#ae713b6c9c9552af781989ec5382158d5">receive</a> (<a class="el" href="classtnnf_1_1_packet_buffer.html">PacketBuffer</a> &amp;buffer, <a class="el" href="classtnnf_1_1_address.html">Address</a> &amp;address, const int &amp;flags) noexceptfinal</td></tr>
-<tr class="memdesc:ae713b6c9c9552af781989ec5382158d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blocking until receives packet on the stored address.  <a href="#ae713b6c9c9552af781989ec5382158d5">More...</a><br /></td></tr>
-<tr class="separator:ae713b6c9c9552af781989ec5382158d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aedbff0b4f5512742642a648712d93e7f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtnnf_1_1_tcp_socket.html#aedbff0b4f5512742642a648712d93e7f">receive</a> (<a class="el" href="classtnnf_1_1_packet_buffer.html">PacketBuffer</a> &amp;buffer, <a class="el" href="classtnnf_1_1_address.html">Address</a> &amp;address) noexceptfinal</td></tr>
-<tr class="memdesc:aedbff0b4f5512742642a648712d93e7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blocking until receives packet on the stored address, with the stored flags.  <a href="#aedbff0b4f5512742642a648712d93e7f">More...</a><br /></td></tr>
-<tr class="separator:aedbff0b4f5512742642a648712d93e7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05fc003226288073314f52e3ee259119"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtnnf_1_1_tcp_socket.html#a05fc003226288073314f52e3ee259119">receive</a> (<a class="el" href="classtnnf_1_1_packet_buffer.html">PacketBuffer</a> &amp;buffer, const int &amp;flags) noexceptfinal</td></tr>
-<tr class="memdesc:a05fc003226288073314f52e3ee259119"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blocking until receives packet on the stored address.  <a href="#a05fc003226288073314f52e3ee259119">More...</a><br /></td></tr>
-<tr class="separator:a05fc003226288073314f52e3ee259119"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a98e65e8a569cf8a21fa2f7d0e6a7db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtnnf_1_1_tcp_socket.html#a4a98e65e8a569cf8a21fa2f7d0e6a7db">receive</a> (<a class="el" href="classtnnf_1_1_packet_buffer.html">PacketBuffer</a> &amp;buffer) noexceptfinal</td></tr>
-<tr class="memdesc:a4a98e65e8a569cf8a21fa2f7d0e6a7db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blocking until receives packet on the stored address, with the stored flags.  <a href="#a4a98e65e8a569cf8a21fa2f7d0e6a7db">More...</a><br /></td></tr>
-<tr class="separator:a4a98e65e8a569cf8a21fa2f7d0e6a7db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad24954f1e16663d30fe5d7db0ff1733a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtnnf_1_1_udp_socket.html#ad24954f1e16663d30fe5d7db0ff1733a">UdpSocket</a> (const <a class="el" href="classtnnf_1_1_address.html">Address</a> &amp;address)</td></tr>
+<tr class="memdesc:ad24954f1e16663d30fe5d7db0ff1733a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for initializing a new UDP socket.  <a href="#ad24954f1e16663d30fe5d7db0ff1733a">More...</a><br /></td></tr>
+<tr class="separator:ad24954f1e16663d30fe5d7db0ff1733a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d2d1495fc1e27413d432dcc398502fc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtnnf_1_1_udp_socket.html#a4d2d1495fc1e27413d432dcc398502fc">UdpSocket</a> (const <a class="el" href="classtnnf_1_1_udp_socket.html">UdpSocket</a> &amp;other)=default</td></tr>
+<tr class="separator:a4d2d1495fc1e27413d432dcc398502fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af315d66574c6f30a4429027e9332fcee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtnnf_1_1_udp_socket.html">UdpSocket</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtnnf_1_1_udp_socket.html#af315d66574c6f30a4429027e9332fcee">operator=</a> (const <a class="el" href="classtnnf_1_1_udp_socket.html">UdpSocket</a> &amp;other)=default</td></tr>
+<tr class="separator:af315d66574c6f30a4429027e9332fcee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77854dcd719c4b4b1e0c034be5b2b1ae"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtnnf_1_1_udp_socket.html#a77854dcd719c4b4b1e0c034be5b2b1ae">UdpSocket</a> (<a class="el" href="classtnnf_1_1_udp_socket.html">UdpSocket</a> &amp;&amp;other) noexcept=default</td></tr>
+<tr class="separator:a77854dcd719c4b4b1e0c034be5b2b1ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa74ab9d05c65d030e7a83f87aae1115a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtnnf_1_1_udp_socket.html">UdpSocket</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtnnf_1_1_udp_socket.html#aa74ab9d05c65d030e7a83f87aae1115a">operator=</a> (<a class="el" href="classtnnf_1_1_udp_socket.html">UdpSocket</a> &amp;&amp;other)=default</td></tr>
+<tr class="separator:aa74ab9d05c65d030e7a83f87aae1115a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e16d75eb801fd438ac98af04998a595"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtnnf_1_1_udp_socket.html#a8e16d75eb801fd438ac98af04998a595">swap</a> (<a class="el" href="classtnnf_1_1_udp_socket.html">UdpSocket</a> &amp;other) noexcept</td></tr>
+<tr class="memdesc:a8e16d75eb801fd438ac98af04998a595"><td class="mdescLeft">&#160;</td><td class="mdescRight">Swap the references between two UdpSockets.  <a href="#a8e16d75eb801fd438ac98af04998a595">More...</a><br /></td></tr>
+<tr class="separator:a8e16d75eb801fd438ac98af04998a595"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a794faa0424d1908a412db49e0ef5cc94"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtnnf_1_1_udp_socket.html#a794faa0424d1908a412db49e0ef5cc94">bind</a> () noexcept</td></tr>
+<tr class="memdesc:a794faa0424d1908a412db49e0ef5cc94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bind the socket to the stored address.  <a href="#a794faa0424d1908a412db49e0ef5cc94">More...</a><br /></td></tr>
+<tr class="separator:a794faa0424d1908a412db49e0ef5cc94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b482496a263c9ac6f2e665be9df955e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtnnf_1_1_udp_socket.html#a0b482496a263c9ac6f2e665be9df955e">bind</a> (const <a class="el" href="classtnnf_1_1_address.html">Address</a> &amp;address)</td></tr>
+<tr class="memdesc:a0b482496a263c9ac6f2e665be9df955e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bind the socket to the given address. The address overwrite the currently stored address.  <a href="#a0b482496a263c9ac6f2e665be9df955e">More...</a><br /></td></tr>
+<tr class="separator:a0b482496a263c9ac6f2e665be9df955e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ecaf083a188d87f76add71ac46d7086"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtnnf_1_1_udp_socket.html#a1ecaf083a188d87f76add71ac46d7086">~UdpSocket</a> ()</td></tr>
+<tr class="memdesc:a1ecaf083a188d87f76add71ac46d7086"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a1ecaf083a188d87f76add71ac46d7086">More...</a><br /></td></tr>
+<tr class="separator:a1ecaf083a188d87f76add71ac46d7086"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a643ce7d65fe8305e34a8293b4245f9a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtnnf_1_1_udp_socket.html#a643ce7d65fe8305e34a8293b4245f9a8">send</a> (const <a class="el" href="classtnnf_1_1_packet.html">Packet</a> &amp;packet, <a class="el" href="classtnnf_1_1_address.html">Address</a> &amp;address, const int &amp;flags) noexceptfinal</td></tr>
+<tr class="memdesc:a643ce7d65fe8305e34a8293b4245f9a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends the specified packet to the given address with the specified flags.  <a href="#a643ce7d65fe8305e34a8293b4245f9a8">More...</a><br /></td></tr>
+<tr class="separator:a643ce7d65fe8305e34a8293b4245f9a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7eb8f3f6cbf91015db0416212edaecf2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtnnf_1_1_udp_socket.html#a7eb8f3f6cbf91015db0416212edaecf2">send</a> (const <a class="el" href="classtnnf_1_1_packet.html">Packet</a> &amp;packet, <a class="el" href="classtnnf_1_1_address.html">Address</a> &amp;address) noexceptfinal</td></tr>
+<tr class="memdesc:a7eb8f3f6cbf91015db0416212edaecf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends the specified packet to the given address with the stored flags.  <a href="#a7eb8f3f6cbf91015db0416212edaecf2">More...</a><br /></td></tr>
+<tr class="separator:a7eb8f3f6cbf91015db0416212edaecf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d13842980b1f2fca3b46e93619a949e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtnnf_1_1_udp_socket.html#a2d13842980b1f2fca3b46e93619a949e">send</a> (const <a class="el" href="classtnnf_1_1_packet.html">Packet</a> &amp;packet, const int &amp;flags) noexceptfinal</td></tr>
+<tr class="memdesc:a2d13842980b1f2fca3b46e93619a949e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends the specified packet to the stored address with the specified flags.  <a href="#a2d13842980b1f2fca3b46e93619a949e">More...</a><br /></td></tr>
+<tr class="separator:a2d13842980b1f2fca3b46e93619a949e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7eb22a2af51b3e59d2743ac26b2650c7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtnnf_1_1_udp_socket.html#a7eb22a2af51b3e59d2743ac26b2650c7">send</a> (const <a class="el" href="classtnnf_1_1_packet.html">Packet</a> &amp;packet) noexceptfinal</td></tr>
+<tr class="memdesc:a7eb22a2af51b3e59d2743ac26b2650c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends the specified packet to the stored address with the stored flags.  <a href="#a7eb22a2af51b3e59d2743ac26b2650c7">More...</a><br /></td></tr>
+<tr class="separator:a7eb22a2af51b3e59d2743ac26b2650c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cd6a89db9f301820f785421d5ab5978"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtnnf_1_1_udp_socket.html#a7cd6a89db9f301820f785421d5ab5978">receive</a> (<a class="el" href="classtnnf_1_1_packet_buffer.html">PacketBuffer</a> &amp;buffer, <a class="el" href="classtnnf_1_1_address.html">Address</a> &amp;address, const int &amp;flags) noexceptfinal</td></tr>
+<tr class="memdesc:a7cd6a89db9f301820f785421d5ab5978"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blocking until receives packet on given address.  <a href="#a7cd6a89db9f301820f785421d5ab5978">More...</a><br /></td></tr>
+<tr class="separator:a7cd6a89db9f301820f785421d5ab5978"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3af13aa5f2c7471f829bf33888250c07"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtnnf_1_1_udp_socket.html#a3af13aa5f2c7471f829bf33888250c07">receive</a> (<a class="el" href="classtnnf_1_1_packet_buffer.html">PacketBuffer</a> &amp;buffer, <a class="el" href="classtnnf_1_1_address.html">Address</a> &amp;address) noexceptfinal</td></tr>
+<tr class="memdesc:a3af13aa5f2c7471f829bf33888250c07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blocking until receives packet on the given address, with the stored flags.  <a href="#a3af13aa5f2c7471f829bf33888250c07">More...</a><br /></td></tr>
+<tr class="separator:a3af13aa5f2c7471f829bf33888250c07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e1b64d329211c61700e9f621a02e2bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtnnf_1_1_udp_socket.html#a9e1b64d329211c61700e9f621a02e2bd">receive</a> (<a class="el" href="classtnnf_1_1_packet_buffer.html">PacketBuffer</a> &amp;buffer, const int &amp;flags) noexceptfinal</td></tr>
+<tr class="memdesc:a9e1b64d329211c61700e9f621a02e2bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blocking until receives packet on the stored address.  <a href="#a9e1b64d329211c61700e9f621a02e2bd">More...</a><br /></td></tr>
+<tr class="separator:a9e1b64d329211c61700e9f621a02e2bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a05bac937c4c78868032e4a7f1a37c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtnnf_1_1_udp_socket.html#a6a05bac937c4c78868032e4a7f1a37c5">receive</a> (<a class="el" href="classtnnf_1_1_packet_buffer.html">PacketBuffer</a> &amp;buffer) noexceptfinal</td></tr>
+<tr class="memdesc:a6a05bac937c4c78868032e4a7f1a37c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blocking until receives packet on the stored address, with the stored flags.  <a href="#a6a05bac937c4c78868032e4a7f1a37c5">More...</a><br /></td></tr>
+<tr class="separator:a6a05bac937c4c78868032e4a7f1a37c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classtnnf_1_1_socket"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classtnnf_1_1_socket')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classtnnf_1_1_socket.html">tnnf::Socket</a></td></tr>
 <tr class="memitem:ae49afc59cbcde140bad978c18948700c inherit pub_methods_classtnnf_1_1_socket"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtnnf_1_1_socket.html#ae49afc59cbcde140bad978c18948700c">Socket</a> (const <a class="el" href="classtnnf_1_1_socket.html">Socket</a> &amp;other)=default</td></tr>
 <tr class="separator:ae49afc59cbcde140bad978c18948700c inherit pub_methods_classtnnf_1_1_socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -188,11 +190,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae9cf2601ad28cb33907aaf739bb242f4 inherit pub_methods_classtnnf_1_1_socket"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtnnf_1_1_address.html">Address</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtnnf_1_1_socket.html#ae9cf2601ad28cb33907aaf739bb242f4">getAddress</a> () noexcept</td></tr>
 <tr class="separator:ae9cf2601ad28cb33907aaf739bb242f4 inherit pub_methods_classtnnf_1_1_socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:a10a44011020f350bac067dc589243fcd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtnnf_1_1_tcp_socket.html#a10a44011020f350bac067dc589243fcd">TcpSocket</a> (const <a class="el" href="classtnnf_1_1_address.html">Address</a> &amp;address)</td></tr>
-<tr class="memdesc:a10a44011020f350bac067dc589243fcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for initializing a new TCP socket.  <a href="#a10a44011020f350bac067dc589243fcd">More...</a><br /></td></tr>
-<tr class="separator:a10a44011020f350bac067dc589243fcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_methods_classtnnf_1_1_socket"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classtnnf_1_1_socket')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classtnnf_1_1_socket.html">tnnf::Socket</a></td></tr>
 <tr class="memitem:aedef0ea78f717a350a33f0783ec34f74 inherit pro_methods_classtnnf_1_1_socket"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtnnf_1_1_socket.html#aedef0ea78f717a350a33f0783ec34f74">Socket</a> (const std::shared_ptr&lt; int &gt; &amp;sock, const <a class="el" href="classtnnf_1_1_address.html">Address</a> &amp;address) noexcept</td></tr>
 <tr class="memdesc:aedef0ea78f717a350a33f0783ec34f74 inherit pro_methods_classtnnf_1_1_socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor. Used for Listener socket accept() method. If you want to use this, you have to make the socket by POSIX calls (like socket() or accept()). You have to call bind() too, if you want to bind the socket to port. You have to be sure to provide an std::shared_ptr exactly that variable which returned by socket() method, because if the memory address change the other methods will not work. Example:  <a href="#aedef0ea78f717a350a33f0783ec34f74">More...</a><br /></td></tr>
@@ -200,15 +199,6 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a206066f59699ed689dbfdd662e7cc5c0 inherit pro_methods_classtnnf_1_1_socket"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtnnf_1_1_socket.html#a206066f59699ed689dbfdd662e7cc5c0">Socket</a> (const <a class="el" href="classtnnf_1_1_address.html">Address</a> &amp;address, const int &amp;type, const int &amp;protocol) noexcept</td></tr>
 <tr class="memdesc:a206066f59699ed689dbfdd662e7cc5c0 inherit pro_methods_classtnnf_1_1_socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor. Initializes a socket for you. Automatically sets the sockopt SO_REUSEADDR to 1.  <a href="#a206066f59699ed689dbfdd662e7cc5c0">More...</a><br /></td></tr>
 <tr class="separator:a206066f59699ed689dbfdd662e7cc5c0 inherit pro_methods_classtnnf_1_1_socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-methods"></a>
-Static Protected Member Functions</h2></td></tr>
-<tr class="memitem:a6ab516c24607c4e644204a46d7ede251"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classtnnf_1_1_tcp_socket.html">TcpSocket</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtnnf_1_1_tcp_socket.html#a6ab516c24607c4e644204a46d7ede251">GetInstance</a> (const std::shared_ptr&lt; int &gt; &amp;sock, const <a class="el" href="classtnnf_1_1_address.html">Address</a> &amp;address)</td></tr>
-<tr class="memdesc:a6ab516c24607c4e644204a46d7ede251"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to set a new socket with already initialized data.  <a href="#a6ab516c24607c4e644204a46d7ede251">More...</a><br /></td></tr>
-<tr class="separator:a6ab516c24607c4e644204a46d7ede251"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_attribs_classtnnf_1_1_socket"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classtnnf_1_1_socket')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classtnnf_1_1_socket.html">tnnf::Socket</a></td></tr>
 <tr class="memitem:a85ca419f6b85101d19885eb72ce32f47 inherit pro_attribs_classtnnf_1_1_socket"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtnnf_1_1_socket.html#a85ca419f6b85101d19885eb72ce32f47">mSocket</a></td></tr>
 <tr class="separator:a85ca419f6b85101d19885eb72ce32f47 inherit pro_attribs_classtnnf_1_1_socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -219,10 +209,8 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:ae341169968bd93277efa50933fb7e7a5 inherit pro_attribs_classtnnf_1_1_socket"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtnnf_1_1_socket.html#ae341169968bd93277efa50933fb7e7a5">mReceiveFlags</a></td></tr>
 <tr class="separator:ae341169968bd93277efa50933fb7e7a5 inherit pro_attribs_classtnnf_1_1_socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This class makes possible to build TCP connections, sending and receiving packets. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a10a44011020f350bac067dc589243fcd"></a>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="ad24954f1e16663d30fe5d7db0ff1733a"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -230,7 +218,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">tnnf::TcpSocket::TcpSocket </td>
+          <td class="memname">tnnf::UdpSocket::UdpSocket </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classtnnf_1_1_address.html">Address</a> &amp;&#160;</td>
           <td class="paramname"><em>address</em></td><td>)</td>
@@ -239,12 +227,12 @@ Additional Inherited Members</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Constructor for initializing a new TCP socket. </p>
+<p>Constructor for initializing a new UDP socket. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">address</td><td>Ip address, which will be stored with the socket. </td></tr>
@@ -254,7 +242,7 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a99a359023e849d77baf1b0e7566116d7"></a>
+<a class="anchor" id="a4d2d1495fc1e27413d432dcc398502fc"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -262,9 +250,9 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">tnnf::TcpSocket::TcpSocket </td>
+          <td class="memname">tnnf::UdpSocket::UdpSocket </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classtnnf_1_1_tcp_socket.html">TcpSocket</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classtnnf_1_1_udp_socket.html">UdpSocket</a> &amp;&#160;</td>
           <td class="paramname"><em>other</em></td><td>)</td>
           <td></td>
         </tr>
@@ -278,7 +266,7 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="af13142e742635325c78a9201bebb7c9d"></a>
+<a class="anchor" id="a77854dcd719c4b4b1e0c034be5b2b1ae"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -286,9 +274,9 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">tnnf::TcpSocket::TcpSocket </td>
+          <td class="memname">tnnf::UdpSocket::UdpSocket </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classtnnf_1_1_tcp_socket.html">TcpSocket</a> &amp;&amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classtnnf_1_1_udp_socket.html">UdpSocket</a> &amp;&amp;&#160;</td>
           <td class="paramname"><em>other</em></td><td>)</td>
           <td></td>
         </tr>
@@ -302,7 +290,7 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="afc468cda1569604b3514aa6c80ae19d0"></a>
+<a class="anchor" id="a1ecaf083a188d87f76add71ac46d7086"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -310,7 +298,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">tnnf::TcpSocket::~TcpSocket </td>
+          <td class="memname">tnnf::UdpSocket::~UdpSocket </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -328,7 +316,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a6ab516c24607c4e644204a46d7ede251"></a>
+<a class="anchor" id="a794faa0424d1908a412db49e0ef5cc94"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -336,43 +324,50 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="classtnnf_1_1_tcp_socket.html">TcpSocket</a> tnnf::TcpSocket::GetInstance </td>
+          <td class="memname">void tnnf::UdpSocket::bind </td>
           <td>(</td>
-          <td class="paramtype">const std::shared_ptr&lt; int &gt; &amp;&#160;</td>
-          <td class="paramname"><em>sock</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Bind the socket to the stored address. </p>
+
+</div>
+</div>
+<a class="anchor" id="a0b482496a263c9ac6f2e665be9df955e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tnnf::UdpSocket::bind </td>
+          <td>(</td>
           <td class="paramtype">const <a class="el" href="classtnnf_1_1_address.html">Address</a> &amp;&#160;</td>
-          <td class="paramname"><em>address</em>&#160;</td>
-        </tr>
-        <tr>
+          <td class="paramname"><em>address</em></td><td>)</td>
           <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Method to set a new socket with already initialized data. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">sock</td><td>An initialized socket carried by std::shared_ptr. </td></tr>
-    <tr><td class="paramname">address</td><td>Ip address, where the packets will be sent. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>with an instance of a new <a class="el" href="classtnnf_1_1_tcp_socket.html" title="This class makes possible to build TCP connections, sending and receiving packets. ">TcpSocket</a> </dd></dl>
+<p>Bind the socket to the given address. The address overwrite the currently stored address. </p>
 
 </div>
 </div>
-<a class="anchor" id="a27cd1fcee0d7f961555383a89b7725ef"></a>
+<a class="anchor" id="af315d66574c6f30a4429027e9332fcee"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -380,9 +375,9 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classtnnf_1_1_tcp_socket.html">TcpSocket</a>&amp; tnnf::TcpSocket::operator= </td>
+          <td class="memname"><a class="el" href="classtnnf_1_1_udp_socket.html">UdpSocket</a>&amp; tnnf::UdpSocket::operator= </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classtnnf_1_1_tcp_socket.html">TcpSocket</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classtnnf_1_1_udp_socket.html">UdpSocket</a> &amp;&#160;</td>
           <td class="paramname"><em>other</em></td><td>)</td>
           <td></td>
         </tr>
@@ -396,7 +391,7 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="afbe6c348aaffb7b3efca529e6b2250bd"></a>
+<a class="anchor" id="aa74ab9d05c65d030e7a83f87aae1115a"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -404,9 +399,9 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classtnnf_1_1_tcp_socket.html">TcpSocket</a>&amp; tnnf::TcpSocket::operator= </td>
+          <td class="memname"><a class="el" href="classtnnf_1_1_udp_socket.html">UdpSocket</a>&amp; tnnf::UdpSocket::operator= </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classtnnf_1_1_tcp_socket.html">TcpSocket</a> &amp;&amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classtnnf_1_1_udp_socket.html">UdpSocket</a> &amp;&amp;&#160;</td>
           <td class="paramname"><em>other</em></td><td>)</td>
           <td></td>
         </tr>
@@ -420,7 +415,7 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ae713b6c9c9552af781989ec5382158d5"></a>
+<a class="anchor" id="a7cd6a89db9f301820f785421d5ab5978"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -428,7 +423,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void tnnf::TcpSocket::receive </td>
+          <td class="memname">void tnnf::UdpSocket::receive </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classtnnf_1_1_packet_buffer.html">PacketBuffer</a> &amp;&#160;</td>
           <td class="paramname"><em>buffer</em>, </td>
@@ -458,11 +453,11 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Blocking until receives packet on the stored address. </p>
+<p>Blocking until receives packet on given address. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">buffer</td><td>Where the packets will be stored. </td></tr>
-    <tr><td class="paramname">address</td><td>will be ignored. </td></tr>
+    <tr><td class="paramname">address</td><td>Where you will get packets. </td></tr>
     <tr><td class="paramname">flags</td><td>Specifies receiving flags for this receive. </td></tr>
   </table>
   </dd>
@@ -472,7 +467,7 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aedbff0b4f5512742642a648712d93e7f"></a>
+<a class="anchor" id="a3af13aa5f2c7471f829bf33888250c07"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -480,7 +475,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void tnnf::TcpSocket::receive </td>
+          <td class="memname">void tnnf::UdpSocket::receive </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classtnnf_1_1_packet_buffer.html">PacketBuffer</a> &amp;&#160;</td>
           <td class="paramname"><em>buffer</em>, </td>
@@ -504,11 +499,11 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Blocking until receives packet on the stored address, with the stored flags. </p>
+<p>Blocking until receives packet on the given address, with the stored flags. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">buffer</td><td>Where the packets will be stored. </td></tr>
-    <tr><td class="paramname">address</td><td>will be ignored. </td></tr>
+    <tr><td class="paramname">address</td><td>Where you will get packets. </td></tr>
   </table>
   </dd>
 </dl>
@@ -517,7 +512,7 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a05fc003226288073314f52e3ee259119"></a>
+<a class="anchor" id="a9e1b64d329211c61700e9f621a02e2bd"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -525,7 +520,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void tnnf::TcpSocket::receive </td>
+          <td class="memname">void tnnf::UdpSocket::receive </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classtnnf_1_1_packet_buffer.html">PacketBuffer</a> &amp;&#160;</td>
           <td class="paramname"><em>buffer</em>, </td>
@@ -562,7 +557,7 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a4a98e65e8a569cf8a21fa2f7d0e6a7db"></a>
+<a class="anchor" id="a6a05bac937c4c78868032e4a7f1a37c5"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -570,7 +565,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void tnnf::TcpSocket::receive </td>
+          <td class="memname">void tnnf::UdpSocket::receive </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classtnnf_1_1_packet_buffer.html">PacketBuffer</a> &amp;&#160;</td>
           <td class="paramname"><em>buffer</em></td><td>)</td>
@@ -596,7 +591,7 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a7aa8f759eb3b96498b0a99bffd3e42e1"></a>
+<a class="anchor" id="a643ce7d65fe8305e34a8293b4245f9a8"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -604,7 +599,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void tnnf::TcpSocket::send </td>
+          <td class="memname">void tnnf::UdpSocket::send </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classtnnf_1_1_packet.html">Packet</a> &amp;&#160;</td>
           <td class="paramname"><em>packet</em>, </td>
@@ -634,11 +629,11 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Sends the specified packet to the stored address with the specified flags. </p>
+<p>Sends the specified packet to the given address with the specified flags. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">packet</td><td></td></tr>
-    <tr><td class="paramname">address</td><td>It will be ignored. </td></tr>
+    <tr><td class="paramname">address</td><td></td></tr>
     <tr><td class="paramname">flags</td><td></td></tr>
   </table>
   </dd>
@@ -648,7 +643,7 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="accbb5359d1cc9580bab8f209c85581ed"></a>
+<a class="anchor" id="a7eb8f3f6cbf91015db0416212edaecf2"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -656,7 +651,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void tnnf::TcpSocket::send </td>
+          <td class="memname">void tnnf::UdpSocket::send </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classtnnf_1_1_packet.html">Packet</a> &amp;&#160;</td>
           <td class="paramname"><em>packet</em>, </td>
@@ -680,11 +675,11 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Sends the specified packet to the stored address with the stored flags. </p>
+<p>Sends the specified packet to the given address with the stored flags. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">packet</td><td></td></tr>
-    <tr><td class="paramname">address</td><td>It will be ignored. </td></tr>
+    <tr><td class="paramname">address</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -693,7 +688,7 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="adb529ca692b31b0154dc5d007d4129f9"></a>
+<a class="anchor" id="a2d13842980b1f2fca3b46e93619a949e"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -701,7 +696,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void tnnf::TcpSocket::send </td>
+          <td class="memname">void tnnf::UdpSocket::send </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classtnnf_1_1_packet.html">Packet</a> &amp;&#160;</td>
           <td class="paramname"><em>packet</em>, </td>
@@ -738,7 +733,7 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a69f6fe0ca7e90ddfdcbd894056baed88"></a>
+<a class="anchor" id="a7eb22a2af51b3e59d2743ac26b2650c7"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -746,7 +741,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void tnnf::TcpSocket::send </td>
+          <td class="memname">void tnnf::UdpSocket::send </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classtnnf_1_1_packet.html">Packet</a> &amp;&#160;</td>
           <td class="paramname"><em>packet</em></td><td>)</td>
@@ -772,7 +767,7 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a298fedb5dd30eee151175e95164d7373"></a>
+<a class="anchor" id="a8e16d75eb801fd438ac98af04998a595"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -780,9 +775,9 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void tnnf::TcpSocket::swap </td>
+          <td class="memname">void tnnf::UdpSocket::swap </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classtnnf_1_1_tcp_socket.html">TcpSocket</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classtnnf_1_1_udp_socket.html">UdpSocket</a> &amp;&#160;</td>
           <td class="paramname"><em>other</em></td><td>)</td>
           <td></td>
         </tr>
@@ -794,10 +789,10 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Swap the references between two TcpSockets. </p>
+<p>Swap the references between two UdpSockets. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">other</td><td>Another <a class="el" href="classtnnf_1_1_tcp_socket.html" title="This class makes possible to build TCP connections, sending and receiving packets. ">TcpSocket</a> </td></tr>
+    <tr><td class="paramname">other</td><td>Another <a class="el" href="classtnnf_1_1_udp_socket.html">UdpSocket</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -805,7 +800,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/home/smoke/files/prog/git_tnnf/include/tnnf/<a class="el" href="_tcp_socket_8hpp_source.html">TcpSocket.hpp</a></li>
+<li>/home/smoke/files/prog/git_tnnf/include/tnnf/<a class="el" href="_udp_socket_8hpp_source.html">UdpSocket.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

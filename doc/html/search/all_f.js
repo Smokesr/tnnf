@@ -7,5 +7,6 @@ var searchData=
   ['_7epacketbuffer',['~PacketBuffer',['../classtnnf_1_1_packet_buffer.html#a5a962401516828ef393e69d61d5fd3d6',1,'tnnf::PacketBuffer']]],
   ['_7eselector',['~Selector',['../classtnnf_1_1_selector.html#a6042ab1f47fabf155e3d553f5915cb20',1,'tnnf::Selector']]],
   ['_7esocket',['~Socket',['../classtnnf_1_1_socket.html#ad09e3e0e947e7820f6ed3bb88bdd7c37',1,'tnnf::Socket']]],
-  ['_7etcpsocket',['~TcpSocket',['../classtnnf_1_1_tcp_socket.html#afc468cda1569604b3514aa6c80ae19d0',1,'tnnf::TcpSocket']]]
+  ['_7etcpsocket',['~TcpSocket',['../classtnnf_1_1_tcp_socket.html#afc468cda1569604b3514aa6c80ae19d0',1,'tnnf::TcpSocket']]],
+  ['_7eudpsocket',['~UdpSocket',['../classtnnf_1_1_udp_socket.html#a1ecaf083a188d87f76add71ac46d7086',1,'tnnf::UdpSocket']]]
 ];
