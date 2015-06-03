@@ -25,8 +25,6 @@ freely, subject to the following restrictions:
 #define TNNF_TCPSOCKET_HPP
 
 #include "Socket.hpp"
-#include "Packet.hpp"
-#include "PacketBuffer.hpp"
 
 namespace tnnf {
     /*! \class TcpSocket
@@ -167,7 +165,7 @@ namespace tnnf {
                 ssize_t currentlyReceived = 0;
 
                 do {
-                    if((currentlyReceived = ::recv(getSocket(), buffer.getBuffer() + buffer.getCurrentSize(), buffer.getSize()/2, flags)) <= 0) {
+                    if((currentlyReceived = ::recv(getSocket(), buffer.getBuffer() + buffer.getCurrentSize(), buffer.getSize(), flags)) <= 0) {
                         if(currentlyReceived == 0) {
                             gSocketErrorFunction(*this, ERROR_SOCKET_HANGUP, errno);
                             return;
