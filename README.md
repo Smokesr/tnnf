@@ -1,9 +1,7 @@
-TNNF - Terribly Named NetFramework
+TNNF - Terribly Named Net Framework
 ===================================
 
 TNNF is a lightweight header-only library for develop network applications.
-
-Currently only operate with TCP.
 
 ### TNNF is able to...
 
