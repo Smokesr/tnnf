@@ -21,8 +21,8 @@ freely, subject to the following restrictions:
 3. This notice may not be removed or altered from any source distribution.
 */
 
-#ifndef TN3E_UDPSOCKET_HPP
-#define TN3E_UDPSOCKET_HPP
+#ifndef TNNF_UDPSOCKET_HPP
+#define TNNF_UDPSOCKET_HPP
 
 #include "Socket.hpp"
 
@@ -208,5 +208,5 @@ namespace tnnf {
     };
 
     socklen_t UdpSocket::msAddressLength = sizeof(sockaddr);
-}//tn3e
-#endif // TN3E_UDPSOCKET_HPP
+}//tnnf
+#endif // TNNF_UDPSOCKET_HPP
